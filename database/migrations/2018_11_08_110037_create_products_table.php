@@ -19,10 +19,10 @@ class CreateProductsTable extends Migration
             $table->integer('id_type')->unsigned();
             $table->string('description');
             $table->float('unit_price');
+            $table->float('promotion_price');
             $table->string('image');
             $table->string('unit');
             $table->integer('new');
-            $table->SoftDeletes();
             $table->timestamps();
         });
     }

@@ -19,7 +19,6 @@ class CreateBillDetailsTable extends Migration
             $table->integer('id_product')->unsigned();
             $table->integer('quantity');
             $table->double('unit_price');
-            $table->SoftDeletes();
             $table->timestamps();
         });
     }
