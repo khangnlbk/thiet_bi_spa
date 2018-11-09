@@ -223,7 +223,7 @@ class PageController extends Controller
         $current_user = User::find(Auth::user()->id);
         $current_user->full_name = $req->fullname;
         $current_user->gender = $req->gender;
-        $current_user->phone_number = $req->phone;
+        $current_user->phone = $req->phone;
         $current_user->address = $req->address;
         if ($req->password !== null) {
             if (password_verify($req->old_password, $current_user->password)) {

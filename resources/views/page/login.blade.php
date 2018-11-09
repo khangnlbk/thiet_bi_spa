@@ -42,13 +42,14 @@
 							<input type="email" id="email" name="email" required>
 						</div>
 						<div class="form-block">
-							<label for="phone">Mật khẩu*</label>
-							<input type="password" id="phone" name="password" required>
+							<label for="password">Mật khẩu*</label>
+							<input type="password" id="password" name="password" required>
 						</div>
 						<div class="form-block">
 							<button type="submit" name="submit" class="btn btn-primary">Đăng nhập</button>
 						</div>
-					<div class="col-sm-3"></div>
+						<div class="col-sm-3"></div>
+					</div>
 				</div>
 			</form>
 			@endif
