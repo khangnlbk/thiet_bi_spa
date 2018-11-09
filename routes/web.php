@@ -14,3 +14,94 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('index', [
+	'as'=>'trang-chu',
+	'uses'=>'PageController@getIndex'
+]);
+Route::get('product_type/{type}', [
+	'as'=>'loai-san-pham',
+	'uses'=>'PageController@getProductType'
+]);
+
+Route::get('product_detail/{id}', [
+	'as'=>'chi-tiet-san-pham',
+	'uses'=>'PageController@getProductDetail'
+]);
+
+Route::get('contact', [
+	'as'=>'lien-he',
+	'uses'=>'PageController@getContact'
+]);
+
+Route::get('about', [
+	'as'=>'gioi-thieu',
+	'uses'=>'PageController@getAbout'
+]);
+
+Route::get('addToCart/{id}', [
+	'as'=>'them-gio-hang',
+	'uses'=>'PageController@getAddToCart'
+]);
+
+Route::post('addToCart/{id}', [
+	'as'=>'them-gio-hang',
+	'uses'=>'PageController@postAddToCart'
+]);
+
+Route::get('deleteCart/{id}', [
+	'as'=>'xoa-gio-hang',
+	'uses'=>'PageController@getDeleteItemCart'
+]);
+
+Route::get('order', [
+	'as'=> 'dat-hang',
+	'uses'=>'PageController@getCheckout'
+]);
+
+Route::post('order', [
+	'as'=>'dat-hang',
+	'uses'=>'PageController@postCheckout'
+]);
+
+Route::get('login', [
+	'as'=>'dang-nhap',
+	'uses'=>'PageController@getLogin'
+]);
+
+Route::get('signup', [
+	'as'=>'dang-ky',
+	'uses'=>'PageController@getSignup'
+]);
+
+Route::post('signup', [
+	'as'=>'dang-ky',
+	'uses'=>'PageController@postSignup'
+]);
+
+Route::post('login', [
+	'as'=>'dang-nhap',
+	'uses'=>'PageController@postLogin'
+]);
+
+Route::get('logout', [
+	'as'=>'dang-xuat',
+	'uses'=>'PageController@getLogout'
+]);
+
+Route::get('search', [
+	'as'=>'tim-kiem',
+	'uses'=>'PageController@getSearch'
+]);
+
+Route::get('edit', [
+	'as'=>'chinh-sua',
+	'uses'=>'PageController@getEdit'
+]);
+
+Route::post('edit', [
+	'as'=>'chinh-sua',
+	'uses'=>'PageController@postEdit'
+]);

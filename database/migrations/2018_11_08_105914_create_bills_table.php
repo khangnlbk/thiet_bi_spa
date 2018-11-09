@@ -20,7 +20,6 @@ class CreateBillsTable extends Migration
             $table->float('total');
             $table->string('payment');
             $table->string('note');
-            $table->SoftDeletes();
             $table->timestamps();
         });
     }
