@@ -22,22 +22,20 @@
 	<div class="rev-slider">
 		@yield('content')
 	</div> <!-- .container -->
-
 	@include('footer')
 	</div> <!-- #footer -->
-	<script lang="javascript">(function() {var pname = ( (document.title !='')? document.title : ((document.querySelector('h1') != null)? document.querySelector('h1').innerHTML : '') );var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async=1; ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=955481fbee1f20ab2450c4cdcffa8c58&data=eyJzc29faWQiOjUzMzY4NzYsImhhc2giOiI4MzQ0ZDNkM2U2ODU4YmY2ZTQ1NzNkNjdiYzExZmU4OSJ9&pname='+pname;var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script>	
 	<div class="copyright">
 		<div class="container">
 			<p class="pull-left">Chính sách bảo mật. (&copy;) 2018</p>
 			<p class="pull-right pay-options">
 				<a href="https://sohapay.vn/info/vi/help/huong-dan-thanh-toan/107-the-mastercard.html"><img src="source/image/master.jpg" alt="" /></a>
 				<a href="https://whypay.vn/tin-tuc/huong-dan-thanh-toan-online-bang-the-VISA-MASTER.html"><img src="source/image/visa.jpg" alt="" /></a>
-				{{-- <a href="#"><img src="source/assets/dest/images/pay/visa.jpg" alt="" /></a> --}}
+				<a href="#"><img src="source/assets/dest/images/pay/visa.jpg" alt="" /></a>
 				<a href="https://www.payvnn.com/huong-dan-thanh-toan-truc-tuyen-voi-the-visa-va-paypal/"><img src="source/image/paypal.jpg" alt="" /></a>
 			</p>
 			<div class="clearfix"></div>
-		</div> <!-- .container -->
-	</div> <!-- .copyright -->
+		</div>
+	</div>
 
 
 	<!-- include js files -->
@@ -65,6 +63,8 @@
 			}}
 		)
 	})
+	</script>
+	<script lang="javascript">var _vc_data = {id : 6276002, secret : '68a078a430fff7cd5b396747646dd390'};(function() {var ga = document.createElement('script');ga.type = 'text/javascript';ga.async=true; ga.defer=true;ga.src = '//live.vnpgroup.net/client/tracking.js?id=6276002';var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();
 	</script>
 </body>
 </html>

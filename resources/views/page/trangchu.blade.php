@@ -105,8 +105,6 @@
 					</div> <!-- .beta-products-list -->
 				</div>
 			</div> <!-- end section with sidebar and main content -->
-
-
 		</div> <!-- .main-content -->
 	</div> <!-- #content -->
 @endsection
