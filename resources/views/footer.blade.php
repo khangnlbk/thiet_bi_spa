@@ -43,11 +43,9 @@
 				<div class="widget">
 					<h4 class="widget-title"><center>Theo dõi</center></h4>
                     <hr>
-					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBamiBread%2F&tabs&width=250&height=150&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="250" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBamiBread%2F&tabs&width=250&height=300&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="400" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 				</div>
 			</div>
 		</div> <!-- .row -->
 	</div> <!-- .container -->
 </div> <!-- #footer -->
-
-
