@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use App\ProductType;
 use App\Cart;
 use Session;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,7 +17,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Schema::defaultStringLength(191);
+        
         view()->composer('header',function($view) {
             $loai_sanpham = ProductType::all();
 

@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('manager/login', 'Manager\LoginController@getLogin');
+Route::post('manager/login', 'Manager\LoginController@postLogin');
+
+Route::group(['prefix' => 'manager', 'namespace' => 'Manager', 'middleware' => 'manager']
+, function () {
+    Route::resource('products', 'ProductController');
+    // Route::get('/login', 'LoginController');
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('index', [
