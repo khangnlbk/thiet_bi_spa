@@ -3,7 +3,7 @@
 	<div class="inner-header">
 		<div class="container">
 			<div class="pull-left">
-				<h6 class="inner-title">Đăng kí</h6>
+				<h6 class="inner-title">ĐĂNG KÍ</h6>
 			</div>
 			<div class="pull-right">
 				<div class="beta-breadcrumb">
@@ -12,6 +12,7 @@
 			</div>
 			<div class="clearfix"></div>
 		</div>
+		<hr>
 	</div>
 	
 	<div class="container">
@@ -33,6 +34,7 @@
 					@endif
 					<div class="col-sm-6">
 						<h4>Đăng kí</h4>
+						<br>
 						<div class="space20">&nbsp;</div>
 						
 						<div class="form-block">

@@ -1,9 +1,10 @@
 @extends('master')
 @section('content')
 <div class="inner-header">
+<hr>
 		<div class="container">
 			<div class="pull-left">
-				<h6 class="inner-title">Sản phẩm {{$loai_sanpham->name}}</h6>
+				<h6 class="inner-title">Sản phẩm: {{$loai_sanpham->name}}</h6>
 			</div>
 			<div class="pull-right">
 				<div class="beta-breadcrumb font-large">
@@ -12,6 +13,7 @@
 			</div>
 			<div class="clearfix"></div>
 		</div>
+		<hr>
 	</div>
 	<div class="container">
 		<div id="content" class="space-top-none">
@@ -29,10 +31,10 @@
 						@endforeach
 						</ul>
 					</div>
-{{-- 					TODO: hiện loại sp và in đậm ở cột bên trái
- --}}					<div class="col-sm-9">
+					<div class="col-sm-9">
 						<div class="beta-products-list">
 							<h4>Danh sách sản phẩm</h4>
+							<hr>
 							<div class="beta-products-details">
 								<p class="pull-left">Tìm thấy {{count($sp_theoloai)}} sản phẩm</p>
 								<div class="clearfix"></div>
@@ -69,11 +71,12 @@
 							@endforeach
 							</div>
 						</div> <!-- .beta-products-list -->
-
+						<hr>
 						<div class="space50">&nbsp;</div>
 
 						<div class="beta-products-list">
 							<h4>Sản phẩm khác</h4>
+							<hr>
 							<div class="beta-products-details">
 								<p class="pull-left">Tìm thấy {{$sp_khac->total()}} sản phẩm</p>
 								<div class="clearfix"></div>
