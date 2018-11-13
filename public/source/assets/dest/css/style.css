@@ -61,7 +61,7 @@ height:100%;
 }
 
 body {
-font:14px/20px "Open Sans",sans-serif;
+font:13px/20px "Open Sans",sans-serif;
 font-style: sans-serif;
 color:black;
 background:#fff;
@@ -735,7 +735,7 @@ margin-top:0
 }
 
 h4,.h4 {
-color:#253951;
+color:green;
 font-size:2.30769em;
 line-height:39.78px;
 font-family:"Open Sans",sans-serif;
@@ -744,7 +744,7 @@ margin-top:0
 }
 
 h5,.h5 {
-color:#253951;
+color:green;
 font-size:1.92308em;
 line-height:39.78px;
 font-family:"Open Sans",sans-serif;
@@ -753,7 +753,7 @@ margin-top:0
 }
 
 h6,.h6 {
-color:#253951;
+color:green;
 font-size:1.92308em;
 line-height:39.78px;
 font-weight:300;
@@ -1937,7 +1937,7 @@ left:1px;
 top:4px;
 width:80px;
 text-transform:uppercase;
-background-color:#3a5c83
+background-color:red
 }
 
 .ribbon:before,.ribbon:after {
@@ -2696,12 +2696,12 @@ height:100px;
 position:relative;
 background-color:#fff;
 margin-right:69px;
-border:2px solid #57a7c6;
+border:2px solid green;
 color:#000
 }
 
 .history-navigation a.active {
-background-color:#57a7c6;
+background-color:green;
 color:#fff
 }
 
@@ -4188,7 +4188,7 @@ text-align:center
 
 .beta-counter i {
 font-size:45px;
-color:#3a5c83
+color:green;
 }
 
 .beta-counter-value {

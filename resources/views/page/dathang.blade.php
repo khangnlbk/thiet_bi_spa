@@ -3,8 +3,9 @@
 <div class="inner-header">
 		<div class="container">
 			<div class="pull-left">
-				<h6 class="inner-title">Đặt hàng</h6>
+				<h6> ĐẶT HÀNG</h6>
 			</div>
+			
 			<div class="pull-right">
 				<div class="beta-breadcrumb">
 					<a href="{{ route('trang-chu') }}">Trang chủ</a> / <span>Đặt hàng</span>
@@ -12,6 +13,7 @@
 			</div>
 			<div class="clearfix"></div>
 		</div>
+		<hr>
 	</div>
 	
 	<div class="container">
@@ -23,8 +25,9 @@
 				<input type="hidden" name="_token" value="{{csrf_token()}}">
 					<div class="row">
 						<div class="col-sm-6">
-							<h4>Thông tin khách hàng</h4>
+							<h4><CENTER>Thông tin khách hàng</CENTER></h4>
 							<div class="space20">&nbsp;</div>
+							<hr>
 
 							<div class="form-block">
 								<label for="name">Họ tên*</label>

@@ -1,6 +1,7 @@
 @extends('master')
 @section('content')
 	<div class="inner-header">
+	<hr>
 		<div class="container">
 			<div class="pull-left">
 				<h6 class="inner-title">Giới thiệu</h6>
@@ -12,11 +13,13 @@
 			</div>
 			<div class="clearfix"></div>
 		</div>
+		<hr>
 	</div>
 	<div class="container">
 		<div id="content">
 			<div class="our-history">
-				<h2 class="text-center wow fadeInDown">Lịch sử của chúng tôi</h2>
+				<h4><center>LỊCH SỬ XÂY DỰNG VÀ PHÁT TRIỂN</h5>
+				<br>
 				<div class="space35">&nbsp;</div>
 
 				<div class="history-slider">
@@ -153,13 +156,13 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="space50">&nbsp;</div>
-			<hr />
-			<div class="space50">&nbsp;</div>
-			<h2 class="text-center wow fadeInDown">Niềm đam mê hướng tới dịch vụ</h2>
+		</div>
+	</div>
+	<hr>	
+	<div class="container">
+		<div id="content">
+			<h4><CENTER>THÀNH TÍCH ĐÃ GẶT HÁI</h4>
 			<div class="space20">&nbsp;</div>
-			<p class="text-center wow fadeInLeft">Với đội ngũ chất lượng chúng tôi luôn đưa ra thị trường những sản phẩm hoàn hảo và tinh túy nhất.</p>
 			<div class="space35">&nbsp;</div>
 
 			<div class="row">
@@ -194,16 +197,14 @@
 						<p class="beta-counter-title">Sản phẩm đưa ra thị trường</p>
 					</div>
 				</div>
-			</div> <!-- .beta-counter block end -->
-
-			<div class="space50">&nbsp;</div>
-			<hr />
-			<div class="space50">&nbsp;</div>
-
-			<h2 class="text-center wow fadeInDownwow fadeInDown">Cá nhân</h2>
+			</div>
+		</div>
+	</div> <!-- .beta-counter block end -->
+	<hr>
+	<div class="container">
+		<div id="content">
+		<h4><CENTER>LÃNH ĐẠO</h4>
 			<div class="space20">&nbsp;</div>
-			<h5 class="text-center other-title wow fadeInLeft">Founders</h5>
-			<p class="text-center wow fadeInRight">Tiến tới đứng đầu thị trường<br />với quy mô hùng hậu.</p>
 			<div class="space20">&nbsp;</div>
 			<div class="row">
 				<div class="col-sm-6 wow fadeInLeft">
@@ -212,10 +213,8 @@
 						<img class="pull-left" src="source/image/person2.jpg" alt="">
 					
 						<div class="media-body beta-person-body">
-							<h5>Phạm Hoàng Hưng</h5>
-							<p class="font-large">Founder</p>
+							<h5>Nguyễn Công Tình</h5>
 							<p>Web developer</p>
-							<a href="single_type_gallery.html">View projects <i class="fa fa-chevron-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -225,73 +224,12 @@
 						<img class="pull-left" src="source/image/person3.jpg" alt="">
 					
 						<div class="media-body beta-person-body">
-							<h5>Hoa Thị Hà</h5>
-							<p class="font-large">Founder</p>
+							<h5>Nguyễn Linh Khang</h5>
 							<p>Web developer</p>
-							<a href="single_type_gallery.html">View projects <i class="fa fa-chevron-right"></i></a>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			<div class="space60">&nbsp;</div>
-			<h5 class="text-center other-title wow fadeInDown">Những cá nhân xuất sắc</h5>
-			<p class="text-center wow fadeInUp">Những thành tích được dựng lên<br /> từ những nỗ lực không biết mệt mỏi của tất cả mọi người</p>
-			<div class="space20">&nbsp;</div>
-			<div class="row">
-				<div class="col-sm-3">
-					<div class="beta-person beta-person-full">
-				<div class="bets-img-hover">
-						<img src="assets/dest/images/person1.jpg" alt="">
-				</div>
-						<div class="beta-person-body">
-							<h5>Phạm Hoàng Hưng</h5>
-							<p class="font-large">Web developer</p>
-							<p>Phát triển một cộng đồng tri thức cao, đem lại hạnh phúc và sự toàn vẹn cho tất cả mọi người</p>
-							<a href="single_type_gallery.html">Chi tiết <i class="fa fa-chevron-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="beta-person beta-person-full">
-					<div class="bets-img-hover">
-						<img src="assets/dest/images/person2.jpg" alt="">
-					</div>
-						<div class="beta-person-body">
-							<h5>Phạm Hoàng Hưng</h5>
-							<p class="font-large">Web developer</p>
-							<p>Phát triển một cộng đồng tri thức cao, đem lại hạnh phúc và sự toàn vẹn cho tất cả mọi người</p>
-							<a href="single_type_gallery.html">Chi tiết <i class="fa fa-chevron-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="beta-person beta-person-full">
-					<div class="bets-img-hover">
-						<img src="assets/dest/images/person3.jpg" alt="">
-					</div>
-						<div class="beta-person-body">
-							<h5>Phạm Hoàng Hưng</h5>
-							<p class="font-large">Web developer</p>
-							<p>Phát triển một cộng đồng tri thức cao, đem lại hạnh phúc và sự toàn vẹn cho tất cả mọi người</p>
-							<a href="single_type_gallery.html">Chi tiết <i class="fa fa-chevron-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="beta-person beta-person-full">
-					<div class="bets-img-hover">	
-						<img src="assets/dest/images/person4.jpg" alt="">
-					</div>
-						<div class="beta-person-body">
-							<h5>Phạm Hoàng Hưng</h5>
-							<p class="font-large">Web developer</p>
-							<p>Phát triển một cộng đồng tri thức cao, đem lại hạnh phúc và sự toàn vẹn cho tất cả mọi người</p>
-							<a href="single_type_gallery.html">Chi tiết <i class="fa fa-chevron-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> <!-- #content -->
-	</div> <!-- .container -->
+		</div>
+	</div>
 @endsection

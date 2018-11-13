@@ -1,9 +1,10 @@
 @extends('master')
 @section('content')
+
 	<div class="inner-header">
 		<div class="container">
 			<div class="pull-left">
-				<h6 class="inner-title">Đăng nhập</h6>
+				<h6 class="inner-title">ĐĂNG NHẬP</h6>
 			</div>
 			<div class="pull-right">
 				<div class="beta-breadcrumb">
@@ -12,6 +13,7 @@
 			</div>
 			<div class="clearfix"></div>
 		</div>
+		<hr>
 	</div>
 	
 	<div class="container">
@@ -35,6 +37,7 @@
 					<div class="col-sm-3"></div>
 					<div class="col-sm-6">
 						<h4>Đăng nhập</h4>
+						<br>
 						<div class="space20">&nbsp;</div>
 						
 						<div class="form-block">

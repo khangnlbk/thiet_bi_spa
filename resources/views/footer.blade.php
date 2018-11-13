@@ -1,3 +1,43 @@
+<section id="footer_promotion" class="bg_w">
+<hr>
+<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-5 col-xs-6 item_policy">
+				<div class="info_policy clearfix">
+					<div class="description pull-left">
+						<h5>MIỄN PHÍ VẬN CHUYỂN</h5>
+						<br>
+						<p><i>Cho đơn hàng trên 5 triệu đồng</i></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-6 item_policy">
+				<div class="info_policy clearfix">
+					<div class="description pull-left">
+						<h5>CAM KẾT CHÍNH HÃNG</h5>
+						<br>
+						<p><i>Đảm bảo chất lượng 100%</i></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6 item_policy">
+				<div class="info_policy clearfix">
+					<div class="description pull-left">
+						<h5>HỖ TRỢ TƯ VẤN</h5>
+						<br>
+						<p><i>Thứ 2-Thứ 7 : 08g30 - 17g30</i></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+
 <div id="footer" class="color-div">
 	<div class="container">
 		<div class="row">

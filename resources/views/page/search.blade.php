@@ -8,6 +8,7 @@
 				<div class="col-sm-12">
 					<div class="beta-products-list">
 						<h4>Kết quả tìm kiếm</h4>
+						<hr>
 						<div class="beta-products-details">
 							<p class="pull-left">Tìm thấy {{$product->total()}} sản phẩm</p>
 							<div class="clearfix"></div>

@@ -12,18 +12,21 @@
 			</div>
 			<div class="clearfix"></div>
 		</div>
+		<hr>
 	</div>
 	<div class="beta-map">
 		
 		<div class="abs-fullwidth beta-map wow flipInX"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6760662475294!2d105.8411588149322!3d21.00561828601084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac76ccab6dd7%3A0x55e92a5b07a97d03!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBCw6FjaCBraG9hIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1519110724785" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 	</div>
+	<hr>
 	<div class="container">
 		<div id="content" class="space-top-none">
 			
 			<div class="space50">&nbsp;</div>
 			<div class="row">
-				<div class="col-sm-8">
-					<h2>Biểu mẫu liên hệ</h2>
+				<div class="col-sm-9">
+					<h4>Biểu mẫu liên hệ</h4>
+					<hr>
 					<div class="space20">&nbsp;</div>
 					<p>Vui lòng để lại thông tin, chúng tôi sẽ liên lạc với bạn.</p>
 					<div class="space20">&nbsp;</div>
@@ -45,18 +48,21 @@
 						</div>
 					</form>
 				</div>
-				<div class="col-sm-4">
-					<h2>Thông tin liên lạc</h2>
+				<div class="col-sm-3">
+					<h4>Thông tin liên lạc</h4>
+					<hr>
 					<div class="space20">&nbsp;</div>
 
-					<h6 class="contact-title">Địa chỉ</h6>
+					<h6> Địa chỉ</h6>
+					<br>
 					<p>
-						43C, 405/80, Bắc CầuHà Nội<br>
-						Ngọc Thụy<br>
-						Hà Nội
+						43C, 405/80, Bắc Cầu-Hà Nội
+						-Ngọc Thụy
+						-Hà Nội
 					</p>
 					<div class="space20">&nbsp;</div>
-					<h6 class="contact-title">Địa chỉ văn phòng</h6>
+					<h6> Địa chỉ văn phòng</h6>
+					<br>
 					<p>
 						Trường Đại học Bách khoa Hà Nội<br>
 						1 Đại Cồ Việt, Bách Khoa<br>
@@ -64,7 +70,8 @@
 						<a href="mailto:hungph.dev.ict@gmail.com">hungph.dev.ict@gmail.com</a>
 					</p>
 					<div class="space20">&nbsp;</div>
-					<h6 class="contact-title">Tuyển dụng</h6>
+					<h6> Tuyển dụng</h6>
+					<br>
 					<p>
 						Xây dựng một xã hội phát triển <br>
 						cùng với chúng tôi <br>
