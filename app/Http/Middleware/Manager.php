@@ -16,10 +16,17 @@ class Manager
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if (Auth::guard($guard)->check()) {
+        if (!Auth::check()) {
             return redirect('/manager/login');
-        }
+        } else {
 
-        return $next($request);
+            if(Auth::user()->role == 1)
+            {
+                return $next($request);
+
+            } else {
+                return redirect('/manager/login');
+            }
+        }
     }
 }

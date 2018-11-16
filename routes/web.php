@@ -15,13 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('manager/login', 'Manager\LoginController@getLogin');
-Route::post('manager/login', 'Manager\LoginController@postLogin');
+Route::get('manager/login', 'Manager\LoginController@getLogin')->name('manager.getLogin');
+Route::post('manager/login', 'Manager\LoginController@postLogin')->name('manager.postLogin');
 
 Route::group(['prefix' => 'manager', 'namespace' => 'Manager', 'middleware' => 'manager']
 , function () {
     Route::resource('products', 'ProductController');
-    // Route::get('/login', 'LoginController');
+    Route::resource('product_types', 'ProductTypeController');
+    Route::get('/home', 'PageController@index')->name('backend.home');
+    Route::post('logout', 'LoginController@getLogout')->name('manager.getLogout');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

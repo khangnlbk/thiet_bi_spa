@@ -165,7 +165,7 @@ class PageController extends Controller
         $user->phone = $req->phone;
         $user->address = $req->address;
         $user->save();
-        return redirect()->back()->with('thanh-cong', 'Đã tạo tài khoản thành công');
+        return redirect()->back()->with('thanh-cong', 'Đã tạo tài khoản thành công.Vui lòng đăng nhập để tiếp tục');
     }
 
     public function postLogin(Request $req) {

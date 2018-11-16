@@ -1,5 +1,5 @@
 @extends('backend.layouts.master')
-@section('title', 'Product')
+@section('title', 'Product Types')
 @section('content')
 <div class="page-container">
     <div class="main-content">
@@ -7,11 +7,11 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="page-header">
-                        <h2 class="header-title">{{ __('product') }}</h2>
+                        <h2 class="header-title">{{ __('product types') }}</h2>
                         <div class="header-sub-title">
                             <nav class="breadcrumb breadcrumb-dash">
-                                <a href="backend.home" class="breadcrumb-item"><i class="ti-home p-r-5"></i>{{ __('home') }}</a>
-                                <a class="breadcrumb-item" href="{{ route('products.index') }}">{{ __('product') }}</a>
+                                <a href="#" class="breadcrumb-item"><i class="ti-home p-r-5"></i>{{ __('home') }}</a>
+                                <a class="breadcrumb-item" href="{{ route('product_types.index') }}">{{ __('product types') }}</a>
                                 <span class="breadcrumb-item active">{{ __('index') }}</span>
                             </nav>
                         </div>
@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="creat_button text-right button_create">
-                        <a href="{{ route('products.create') }}" class="btn btn-success">{{ __('button_product') }}</a>
+                        <a href="{{ route('product_types.create') }}" class="btn btn-success">{{ __('button_product') }}</a>
                     </div> 
                 </div>
             </div>
@@ -30,12 +30,9 @@
                             <thead>
                                 <tr>
                                     <th>{{ __('STT') }}</th>
-                                    <th>{{ __('Product_type') }}</th>
                                     <th>{{ __('Image') }}</th>
                                     <th>{{ __('Name') }}</th>
                                     <th>{{ __('Description') }}</th>
-                                    <th>{{ __('Unit_price') }}</th>
-                                    <th>{{ __('Promotion_price') }}</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -52,18 +49,15 @@
                                 @php
                                     $stt = 1;
                                 @endphp
-                                @foreach($product as $value)
+                                @foreach($product_type as $value)
                                     <tr>
                                         <td>{{ $stt++ }}</td>
-                                        <td>{{ $value->id_type }}</td>
                                         <td>{{ $value->image }}</td>
-                                        <td><a href="{{ route('products.show', $value->id) }}">{{ $value->name }}</a></td>
+                                        <td>{{ $value->name }}</td>
                                         <td>{!! str_limit($value->description, 50) !!}</td>
-                                        <td>{{ $value->unit_price }} {{ __('VND') }}</td>
-                                        <td>{{ $value->promotion_price }} {{ __('VND') }}</td>
                                         <td class="font-size-18 text-center">
-                                            <a href="{{ route('products.edit', $value->id) }}" class="text-gray m-r-15"><i class="ti-pencil"></i></a>
-                                            <a data-toggle="modal" data-target="#basic-modal" data-url="{{ route('products.destroy', $value->id) }}" class="text-gray m-r-15"><i class="ti-trash"></i></a>
+                                            <a href="{{ route('product_types.edit', $value->id) }}" class="text-gray m-r-15"><i class="ti-pencil"></i></a>
+                                            <a data-toggle="modal" data-target="#basic-modal" data-url="{{ route('product_types.destroy', $value->id) }}" class="text-gray m-r-15"><i class="ti-trash"></i></a>
                                         </td>
                                     </tr>
                                 @endforeach
