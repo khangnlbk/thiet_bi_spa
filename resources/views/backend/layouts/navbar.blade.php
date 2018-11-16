@@ -16,10 +16,10 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a href="{{ route('products.index') }}">{{ __('index') }}</a>
+                        <a href="{{ route('products.index') }}">{{ __('Product Information') }}</a>
                     </li>
                     <li>
-                        <a href="#">{{ __('category') }}</a>
+                        <a href="{{ route('product_types.index') }}">{{ __('Product Types') }}</a>
                     </li>
                 </ul>
             </li>

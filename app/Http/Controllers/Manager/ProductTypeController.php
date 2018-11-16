@@ -5,12 +5,11 @@ namespace App\Http\Controllers\Manager;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Product;
-use App\Image;
 use App\ProductType;
 use Illuminate\Support\Str;
-use App\Http\Requests\ProductFormRequest;
+use App\Http\Requests\ProductTypeFormRequest;
 
-class ProductController extends Controller
+class ProductTypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -19,9 +18,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $product = Product::all();
+        $product_type = ProductType::all();
 
-        return view('backend.products.index', compact('product'));
+        return view('backend.product_types.index', compact('product_type'));
     }
 
     /**
@@ -31,9 +30,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-        // $product_type = ProductType::all();
+        $product_type = ProductType::all();
 
-        return view('backend.products.create');
+        return view('backend.product_types.create', compact('product_type'));
     }
 
     /**
@@ -42,21 +41,16 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ProductFormRequest $request)
+    public function store(ProductTypeFormRequest $request)
     {
-        $product = new Product([
+        $product_type = new ProductType([
             'name' => $request->name,
-            'id_type' => $request->id_type,
             'description' => $request->description,
-            'unit_price' => $request->unit_price,
-            'promotion_price' => $request->promotion_price,
-            'unit' => $request->unit,
-            'new' => $request->new,
             'image' => $request->image,
         ]);
 
-        $product->save();
-        return view('backend.products.show', compact('product'))->with('success', __('create_success'));
+        $product_type->save();
+        return view('backend.product_types.show', compact('product_type'))->with('success', __('create_success'));
     }
 
     /**
@@ -67,9 +61,9 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        $product = Product::findOrFail($id);
+        $product_type = ProductType::findOrFail($id);
 
-        return view('backend.products.show', compact('product'));
+        return view('backend.product_types.show', compact('product_type'));
     }
 
     /**
@@ -80,10 +74,9 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        $product = Product::findOrFail($id);
-        $product_type = ProductType::all();
+        $product_type = ProductType::findOrFail($id);
 
-        return view('backend.products.edit', compact('product', 'product_type'));
+        return view('backend.product_types.edit', compact('product_type'));
     }
 
     /**
@@ -95,18 +88,13 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $product = Product::findOrFail($id);
-        $product->name = $request->name;
-        $product->image = $request->image;
-        $product->id_type = $request->id_type;
-        $product->description = $request->description;
-        $product->unit_price = $request->unit_price;
-        $product->promotion_price = $request->promotion_price;
-        $product->unit = $request->unit;
-        $product->new = $request->new;
-        $product->save();
+        $product_type = ProductType::findOrFail($id);
+        $product_type->name = $request->name;
+        $product_type->image = $request->image;
+        $product_type->description = $request->description;
+        $product_type->save();
 
-        return redirect()->route('products.index')->with('success', __('update_success'));
+        return redirect()->route('product_types.index')->with('success', __('update_success'));
 
     }
 
@@ -118,9 +106,10 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        $product = Product::findOrFail($id);
-        $product->delete();
+        $product_type = ProductType::findOrFail($id);
+        $product_type->delete();
 
         return redirect()->back()->with('success', __('delete_success'));
     }
+
 }

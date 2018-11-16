@@ -51,7 +51,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::admin()->email }} <span class="caret"></span>
+                                     <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -61,9 +61,8 @@
                                         {{ __('Logout') }}
                                     </a>
 
-                                    <form id="logout-form" action="#" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
+                                    {!! Form::open(['method' => 'POST', 'url' => 'logout', 'id' => 'logout-form']) !!} 
+                                    {!! Form::close() !!}
                                 </div>
                             </li>
                         @endguest

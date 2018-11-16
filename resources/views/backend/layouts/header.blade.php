@@ -115,7 +115,7 @@
                         <ul class="list-media">
                             <li class="list-item p-15">
                                 <div class="info">
-                                    <span class="title text-semibold">{{ Auth::admin()->email }}</span>
+                                    <span class="title text-semibold"></span>
                                 </div>
                             </li>
                         </ul>
@@ -145,7 +145,7 @@
                             <i class="ti-power-off p-r-10"></i>
                             <span>{{ __('logout') }}</span>
                         </a>
-                        {!! Form::open(['method' => 'POST', 'url' => 'logout', 'id' => 'logout-form']) !!} 
+                        {!! Form::open(['method' => 'POST', 'url' => 'manager/logout', 'id' => 'logout-form']) !!} 
                         {!! Form::close() !!}
                     </li>
                 </ul>

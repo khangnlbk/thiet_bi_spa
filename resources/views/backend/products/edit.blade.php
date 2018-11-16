@@ -15,8 +15,8 @@
                         <h2 class="header-title">{{ __('product') }}</h2>
                         <div class="header-sub-title">
                             <nav class="breadcrumb breadcrumb-dash">
-                                <a href="{{ route('manager.home') }}" class="breadcrumb-item"><i class="ti-home p-r-5"></i>{{ __('home') }}</a>
-                                <a class="breadcrumb-item" href="{{ route('product.index') }}">{{ __('product') }}</a>
+                                <a href="{{ route('products.index') }}" class="breadcrumb-item"><i class="ti-home p-r-5"></i>{{ __('home') }}</a>
+                                <a class="breadcrumb-item" href="{{ route('products.index') }}">{{ __('product') }}</a>
                                 <span class="breadcrumb-item active">{{ __('edit') }}</span>
                             </nav>
                         </div>
@@ -27,7 +27,7 @@
                             <h4 class="card-title">{{ __('edit_product') }}</h4>
                         </div>
                         <div class="card-body">
-                            {!! Form::model($product, ['route' => ['product.update', $product->id]]) !!}
+                            {!! Form::model($product, ['route' => ['products.update', $product->id]]) !!}
                                 {{ method_field('PUT') }}
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
@@ -46,28 +46,48 @@
                                     <div class="col-md-8">
                                         <div class="p-h-10">
                                             <div class="form-group">
-                                                {{ Form::label(__('category'), null, ['class' => 'control-label']) }}
-                                                <select class="form-control" name="categories">
-                                                    @foreach($categories as $value)
-                                                    <option value="{{ $value->id }}" @if($value->id == $product->category->id) selected="selected" @endif>{{ $value->name }}</option>
-                                                    @endforeach
-                                                </select>
+                                                {{ Form::label(__('id_type'), null, ['class' => 'control-label']) }}
+                                                {{ Form::text('id_type', null, ['class' => 'form-control', 'value' => $product->id_type]) }}
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2"></div>  
-                                </div> 
+                                    <div class="col-md-2"></div>
+                                </div>
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
                                     <div class="col-md-8">
                                         <div class="p-h-10">
                                             <div class="form-group">
-                                                {{ Form::label(__('price'), null, ['class' => 'control-label']) }}
+                                                {{ Form::label(__('image'), null, ['class' => 'control-label']) }}
+                                                {{ Form::text('image', null, ['class' => 'form-control', 'value' => $product->image]) }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                                <div class="row m-t-30">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="p-h-10">
+                                            <div class="form-group">
+                                                {{ Form::label(__('unit_price'), null, ['class' => 'control-label']) }}
                                                 <div class="input-group">
                                                     <div class="input-group-prepend">
-                                                        <span class="input-group-text">{{ __('$') }}</span>
+                                                        <span class="input-group-text">{{ __('VND') }}</span>
                                                     </div>
-                                                    {{ Form::text('price', null, ['class' => 'form-control', 'value' => $product->price]) }}
+                                                    {{ Form::text('unit_price', null, ['class' => 'form-control', 'value' => $product->unit_price]) }}
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text">{{ __('00') }}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                {{ Form::label(__('promotion_price'), null, ['class' => 'control-label']) }}
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">{{ __('VND') }}</span>
+                                                    </div>
+                                                    {{ Form::text('promotion_price', null, ['class' => 'form-control', 'value' => $product->promotion_price]) }}
                                                     <div class="input-group-append">
                                                         <span class="input-group-text">{{ __('00') }}</span>
                                                     </div>
@@ -82,13 +102,38 @@
                                     <div class="col-md-8">
                                         <div class="p-h-10">
                                             <div class="form-group">
-                                                {{ Form::label(__('describe'), null, ['class' => 'control-label']) }}
-                                                {{ Form::textarea('describe', $product->describe, ['class' => 'form-control']) }}
+                                                {{ Form::label(__('new'), null, ['class' => 'control-label']) }}
+                                                {{ Form::text('new', null, ['class' => 'form-control', 'value' => $product->new]) }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                                <div class="row m-t-30">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="p-h-10">
+                                            <div class="form-group">
+                                                {{ Form::label(__('unit'), null, ['class' => 'control-label']) }}
+                                                {{ Form::text('unit', null, ['class' => 'form-control', 'value' => $product->unit]) }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                                <div class="row m-t-30">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="p-h-10">
+                                            <div class="form-group">
+                                                {{ Form::label(__('description'), null, ['class' => 'control-label']) }}
+                                                {{ Form::textarea('description', $product->description, ['class' => 'form-control']) }}
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-2"></div>  
                                 </div>
+                                
                                 <div class="text-center">
                                     {{ Form::reset(__('Reset'), ['class' => 'btn btn-default']) }}
                                     {{ Form::submit(__('edit'), ['class' => 'btn btn-success']) }}

@@ -17,7 +17,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/manager';
+    protected $redirectTo = '/manager/home';
 
     /**
      * Create a new controller instance.
@@ -48,7 +48,12 @@ class LoginController extends Controller
             ]
         );
         $credientials = array('email'=>$req->email, 'password'=>$req->password);
-            return view('backend.home');
+        // dd($credientials);
+        // dd(Auth::attempt($credientials));
+        if(Auth::attempt($credientials)) {
+            return redirect()->route('backend.home');      
+        }
+        return redirect()->route('manager.getLogin')->with('');
     }
     public function getLogout() {
         Auth::logout();

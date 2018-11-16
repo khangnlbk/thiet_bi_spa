@@ -1,5 +1,5 @@
 @extends('backend.layouts.master')
-@section('title', 'Information')
+@section('title', 'Product Type Information')
 @section('content')
 
 <div class="page-container">
@@ -8,11 +8,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-header">
-                        <h2 class="header-title">{{ __('product') }}</h2>
+                        <h2 class="header-title">{{ __('product type') }}</h2>
                         <div class="header-sub-title">
                             <nav class="breadcrumb breadcrumb-dash">
-                                <a href="backend.home" class="breadcrumb-item"><i class="ti-home p-r-5"></i>{{ __('home') }}</a>
-                                <a class="breadcrumb-item" href="{{ route('products.index') }}">{{ __('product') }}</a>
+                                <a href="#" class="breadcrumb-item"><i class="ti-home p-r-5"></i>{{ __('home') }}</a>
+                                <a class="breadcrumb-item" href="{{ route('product_types.index') }}">{{ __('product type') }}</a>
                                 <span class="breadcrumb-item active">{{ __('show') }}</span>
                             </nav>
                         </div>
@@ -24,33 +24,21 @@
                     <div class="row m-v-30">
                         <div class="col-sm-5">
                             <div class="single-item-header">
-                                <a><img src="{{ asset('source/image/product/' . $product->image) }}" alt="" height="300px"></a>
+                                <a><img src="{{ asset('source/image/product/' . $product_type->image) }}" alt="" height="300px"></a>
                             </div>
                         </div>
                         <div class="col-sm-7 text-center text-sm-left">
                             <br>
-                            <h2 class="m-b-5">Name: {{ $product->name }}</h2>
+                            <h2 class="m-b-5">Name: {{ $product_type->name }}</h2>
                             <br>
-                            <div class="form-group">
-                                {{ Form::label(__('unit_price :'), null, ['class' => 'control-label']) }}
-                                <span>{{ $product->unit_price }}</span>
-                            </div>
-                            <div class="form-group">
-                                {{ Form::label(__('promotion_price :'), null, ['class' => 'control-label']) }}
-                                <span>{{ $product->promotion_price }}</span>
-                            </div>
 
                             <div class="form-group">
                                 {{ Form::label(__('description :'), null, ['class' => 'control-label']) }}
-                                <span>{{ $product->description }}</span>
-                            </div>
-                            <div class="form-group">
-                                {{ Form::label(__('new :'), null, ['class' => 'control-label']) }}
-                                <span>{{ $product->new }}</span>
+                                <span>{{ $product_type->description }}</span>
                             </div>
                             <div class="col-lg-10 col-lg-offset-2">
                                 <a href="{{ route('backend.home') }}" class="btn btn-default">{{ __('Back') }}</a>
-                                <a href="{{ route('products.edit', $product->id) }}" class="btn btn-success">{{ __('Edit') }}</a>
+                                <a href="{{ route('product_types.edit', $product_type->id) }}" class="btn btn-success">{{ __('Edit') }}</a>
                             </div>
                         </div>
                     </div>

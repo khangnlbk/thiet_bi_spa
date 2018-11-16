@@ -8,8 +8,8 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="#">
-                        @csrf
+                    <form method="POST" action="{{ route('manager.postLogin') }}">
+                        {!! csrf_field() !!}
 
                         <div class="form-group row">
                             <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>

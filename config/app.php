@@ -216,7 +216,7 @@ return [
     'manager' => 'manager',
     'aprove' => 1,
     'refuse' => 2, 
-    'link_product' => 'soure/image/product/',
+    'link_product' => 'source/image/product/',
     'link_logo' => 'logo/logohead.png',
     'password' => '123456',
 

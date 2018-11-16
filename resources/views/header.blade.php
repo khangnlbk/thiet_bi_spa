@@ -3,8 +3,8 @@
 		<div class="container">
 			<div class="pull-left auto-width-left">
 				<ul class="top-menu menu-beta l-inline">
-					<li><a href=""><i class="fa fa-home"></i> 43C, 405/80, Bắc Cầu, Ngọc Thụy, Long Biên, Hà Nội</a></li>
-					<li><a href=""><i class="fa fa-phone"></i> 0965 818 552</a></li>
+					<li><a href="{{ route('lien-he') }}"><i class="fa fa-home"></i> 43C, 405/80, Bắc Cầu, Ngọc Thụy, Long Biên, Hà Nội</a></li>
+					<li><a href="{{ route('lien-he') }}"><i class="fa fa-phone"></i> 0965 818 552</a></li>
 				</ul>
 			</div>
 			<div class="pull-right auto-width-right">
