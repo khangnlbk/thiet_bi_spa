@@ -23,6 +23,22 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);">
+                    <span class="icon-holder">
+                        <i class="fa fa-envira"></i>
+                    </span>
+                    <span class="title">{{ __('Bill') }}</span>
+                    <span class="arrow">
+                        <i class="mdi mdi-chevron-right"></i>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="{{ route('bills.index') }}">{{ __('Bills Information') }}</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>

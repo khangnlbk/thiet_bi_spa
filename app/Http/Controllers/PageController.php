@@ -91,7 +91,7 @@ class PageController extends Controller
         $cart = Session::get('cart');
 
         $customer = new Customer;
-        $customer->name = $req->name;
+        $customer->full_name = $req->fullname;
         $customer->gender = $req->gender;
         $customer->email = $req->email;
         $customer->address = $req->address;
@@ -102,19 +102,18 @@ class PageController extends Controller
         $bill = new Bill;
         $bill->id_customer = $customer->id;
         $bill->date_order = date('Y-m-d');
-        // var_dump($req->use_coin);
-        // exit;
-        if ($req->use_coin == 'yes') {
-            $bill->total = $cart->totalPrice - Auth::user()->coin_point*10;   
-            Auth::user()->coin_point = 0;
-        } elseif ($req->use_coin == 'no'){
-            $bill->total = $cart->totalPrice;
-            Auth::user()->coin_point += $cart->totalPrice/1000;  
-        }
+        // if ($req->use_coin == 'yes') {
+        //     $bill->total = $cart->totalPrice - Auth::user()->coin_point*10;   
+        //     Auth::user()->coin_point = 0;
+        // } elseif ($req->use_coin == 'no'){
+        //     $bill->total = $cart->totalPrice;
+        //     Auth::user()->coin_point += $cart->totalPrice/1000;  
+        // }
+        $bill->total = $cart->totalPrice;
         $bill->payment = $req->payment_method;
         $bill->note = $customer->note;
         $bill->save();
-        Auth::user()->save();
+        // Auth::user()->save();    
 
 
         foreach ($cart->items as $key => $value) {

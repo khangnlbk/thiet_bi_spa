@@ -22,6 +22,7 @@ Route::group(['prefix' => 'manager', 'namespace' => 'Manager', 'middleware' => '
 , function () {
     Route::resource('products', 'ProductController');
     Route::resource('product_types', 'ProductTypeController');
+    Route::resource('bills', 'BillController');
     Route::get('/home', 'PageController@index')->name('backend.home');
     Route::post('logout', 'LoginController@getLogout')->name('manager.getLogout');
 });

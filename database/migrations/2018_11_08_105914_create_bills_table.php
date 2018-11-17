@@ -17,9 +17,10 @@ class CreateBillsTable extends Migration
             $table->increments('id');
             $table->integer('id_customer')->unsigned();
             $table->date('date_order');
-            $table->float('total');
+            $table->string('total');
             $table->string('payment');
             $table->string('note');
+            $table->boolean('status')->nullable();
             $table->timestamps();
         });
     }

@@ -73,6 +73,7 @@
 							@endforeach
 						</div>
 					</div>
+					<div class="row">{{$new_product->fragment('pag1')->render()}}</div>
 				</div>
 				<div class="col-sm-2 aside">
 					<div class="widget">
@@ -193,6 +194,7 @@
 							@endforeach
 						</div>
 					</div>
+					<div class="row">{{$new_product->fragment('pag1')->render()}}</div>
 				</div>
 				<br>
 				<div class="col-sm-2 aside">
