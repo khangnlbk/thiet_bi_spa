@@ -10,8 +10,15 @@
 			<div class="pull-right auto-width-right">
 				<ul class="top-details menu-beta l-inline">
 					@if(Auth::check())
-					<li><a href="{{ route('chinh-sua') }}"><i class="fa fa-user"></i>Xin chào bạn {{Auth::user()->full_name}}</a></li>
-					<li><a href="{{ route('dang-xuat') }}">Đăng xuất</a></li>
+						@if(Auth::user()->role == 1)
+						<li><a href="{{ route('chinh-sua') }}"><i class="fa fa-user"></i>Xin chào Admin</a></li>
+						<li><a href="{{ route('backend.home') }}"><i class="fa fa-user"></i>Đến trang Admin</a></li>
+						<li><a href="{{ route('dang-xuat') }}">Đăng xuất</a></li>
+						@else
+
+						<li><a href="{{ route('chinh-sua') }}"><i class="fa fa-user"></i>Xin chào bạn {{Auth::user()->full_name}}</a></li>
+						<li><a href="{{ route('dang-xuat') }}">Đăng xuất</a></li>
+						@endif
 					@else
 					<li><a href="{{ route('dang-ky') }}">Đăng kí</a></li>
 					<li><a href="{{ route('dang-nhap') }}">Đăng nhập</a></li>

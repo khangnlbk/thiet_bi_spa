@@ -1,5 +1,5 @@
 @extends('backend.layouts.master')
-@section('title', 'Product Types')
+@section('title', 'Bills')
 @section('content')
 <div class="page-container">
     <div class="main-content">
@@ -7,20 +7,20 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="page-header">
-                        <h2 class="header-title">{{ __('product types') }}</h2>
+                        <h2 class="header-title">{{ __('Bills') }}</h2>
                         <div class="header-sub-title">
                             <nav class="breadcrumb breadcrumb-dash">
-                                <a href="#" class="breadcrumb-item"><i class="ti-home p-r-5"></i>{{ __('home') }}</a>
-                                <a class="breadcrumb-item" href="{{ route('product_types.index') }}">{{ __('product types') }}</a>
+                                <a href="backend.home" class="breadcrumb-item"><i class="ti-home p-r-5"></i>{{ __('home') }}</a>
+                                <a class="breadcrumb-item" href="{{ route('bills.index') }}">{{ __('Bills') }}</a>
                                 <span class="breadcrumb-item active">{{ __('index') }}</span>
                             </nav>
                         </div>
                     </div> 
                 </div>
                 <div class="col-md-4">
-                    <div class="creat_button text-right button_create">
-                        <a href="{{ route('product_types.create') }}" class="btn btn-success">{{ __('Add Product Type') }}</a>
-                    </div> 
+                    <!-- <div class="creat_button text-right button_create">
+                        <a href="{{ route('bills.create') }}" class="btn btn-success">{{ __('Creat Bills') }}</a>
+                    </div>  -->
                 </div>
             </div>
             <div class="card">
@@ -30,9 +30,12 @@
                             <thead>
                                 <tr>
                                     <th>{{ __('STT') }}</th>
-                                    <th>{{ __('Image') }}</th>
-                                    <th>{{ __('Name') }}</th>
-                                    <th>{{ __('Description') }}</th>
+                                    <th>{{ __('Customer Email') }}</th>
+                                    <th>{{ __('Date Order') }}</th>
+                                    <th>{{ __('Total') }}</th>
+                                    <th>{{ __('Payment') }}</th>
+                                    <th>{{ __('Note') }}</th>
+                                    <th>{{ __('Status') }}</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -49,15 +52,27 @@
                                 @php
                                     $stt = 1;
                                 @endphp
-                                @foreach($product_type as $value)
+                                @foreach($bill as $value)
                                     <tr>
                                         <td>{{ $stt++ }}</td>
-                                        <td>{{ $value->image }}</td>
-                                        <td>{{ $value->name }}</td>
-                                        <td>{!! str_limit($value->description, 50) !!}</td>
+                                        <td>{{ $value->customer->email }}</td>
+                                        <td>{{ $value->date_order }}</td>
+                                        <td>{{ $value->total }}</td>
+                                        <td>{{ $value->payment }}</td>
+                                        <td>{!! str_limit($value->note, 50) !!}</td>
+                                        <td>
+                                        @if( $value->status == 1 )
+                                                <i>Accepted</i>
+                                            @else
+                                            <a href="{{ route('bills.edit', $value->id) }}"
+                                                <i>Waiting Accept</i>
+                                            @endif
+                                            </a></td>
+                                        </td>
                                         <td class="font-size-18 text-center">
-                                            <a href="{{ route('product_types.edit', $value->id) }}" class="text-gray m-r-15"><i class="ti-pencil"></i></a>
-                                            <a data-toggle="modal" data-target="#basic-modal" data-url="{{ route('product_types.destroy', $value->id) }}" class="text-gray m-r-15"><i class="ti-trash"></i></a>
+                                            <a href="{{ route('bills.show', $value->id) }}" class="text-gray m-r-15"><i class="fa fa-file"></i></a>
+                                           <!--  <a href="{{ route('bills.edit', $value->id) }}" class="text-gray m-r-15"><i class="ti-pencil"></i></a> -->
+                                            <a data-toggle="modal" data-target="#basic-modal" data-url="{{ route('bills.destroy', $value->id) }}" class="text-gray m-r-15"><i class="ti-trash"></i></a>
                                         </td>
                                     </tr>
                                 @endforeach

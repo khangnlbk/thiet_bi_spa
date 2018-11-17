@@ -19,7 +19,7 @@
 	<div class="container">
 		<div id="content">
 		@if(Session::has('thongbao'))
-			<h4>Trạng thái: {{Session::get('thongbao')}}, quay về <a href="{{ route('trang-chu') }}" style="color: #ff9933"><b>trang chủ</b></a> để mua hàng thêm nha ^^</h4>
+			<center><h5>{{Session::get('thongbao')}}, Hãy quay về <a href="{{ route('trang-chu') }}" style="color: #ff9933"><b>Trang chủ</b></a> để tiếp tục mua hàng!</h5></center>
 		@else
 			<form action="{{ route('dat-hang') }}" method="post" class="beta-form-checkout">
 				<input type="hidden" name="_token" value="{{csrf_token()}}">
@@ -31,7 +31,7 @@
 
 							<div class="form-block">
 								<label for="name">Họ tên*</label>
-								<input type="text" id="name" name="name" placeholder="Họ tên" value="@if(Auth::check()){{Auth::user()->full_name}}@endif" required>
+								<input type="text" id="full_name" name="full_name" placeholder="Họ tên" value="@if(Auth::check()){{Auth::user()->full_name}}@endif" required>
 							</div>
 							<div class="form-block">
 								<label>Giới tính </label>
@@ -89,7 +89,7 @@
 										<div class="clearfix"></div>
 									@endforeach
 									</div>
-									@if(Auth::check())
+									<!-- @if(Auth::check())
 										<br>
 										<p style="font-size: 18px">Số xu tích trữ của bạn: <i>{{Auth::user()->coin_point}}</i> xu. Sử dụng xu để được giảm giá hoặc tích trữ cho lần sau. Sử dụng?</p>
 										<br>
@@ -97,7 +97,7 @@
 											<input id="use_coin" type="radio" class="input-radio" name="use_coin" value="yes" style="width: 10%"><span style="margin-right: 10%">Có</span>
 											<input id="use_coin" type="radio" class="input-radio" name="use_coin" value="no" checked="" style="width: 10%"><span style="margin-right: 10%">Không</span>
 										</div>
-									@endif
+									@endif -->
 									<br>
 									<div class="your-order-item">
 										<div class="pull-left"><p class="your-order-f18"><b>Tổng tiền:</b></p></div>
