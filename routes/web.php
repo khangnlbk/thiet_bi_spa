@@ -117,3 +117,16 @@ Route::post('edit', [
 	'as'=>'chinh-sua',
 	'uses'=>'PageController@postEdit'
 ]);
+
+Route::get('sendemail', function () {
+	$data = array(
+		'name' => "Learning Laravel",
+	);
+
+	Mail::send('mail.bill', $data, function ($message) {
+		$message->from('tinhhang22@gmail.com', 'Learning Laravel');
+		$message->to('tinh.nc96@gmail.com')->subject('Learning Laravel test email');
+	});
+
+	return "Your email has been sent successfully";
+});

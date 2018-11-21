@@ -1,0 +1,13 @@
+{
+  "name": "ember-challenge",
+  "homepage": "https://github.com/carlomagno83/ember-challenge",
+  "_release": "949fefcceb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "949fefcceb4edbcfef3ced17b29341c58843b005"
+  },
+  "_source": "https://github.com/carlomagno83/ember-challenge.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/carlomagno83/ember-challenge.git"
+}

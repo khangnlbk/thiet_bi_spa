@@ -1,4 +1,5 @@
 @extends('master')
+@section('title', 'Search')
 @section('content')
 <div class="container">
 	<div id="content" class="space-top-none">

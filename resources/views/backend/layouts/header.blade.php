@@ -34,7 +34,7 @@
             @guest
             <li><a href="#">{{ __('login') }}</a></li>
             @else
-            <li class="dropdown dropdown-animated scale-left">
+            <!-- <li class="dropdown dropdown-animated scale-left">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <i class="mdi mdi-apps"></i>
                 </a>
@@ -88,7 +88,7 @@
                         </a>
                     </li>
                 </ul>    
-            </li>
+            </li> -->
             <li class="notifications dropdown dropdown-animated scale-left">
                 <span class="counter" id="noti-count"></span>
                 <a href="#" id="top-cart-trigger" class="dropdown-toggle" data-toggle="dropdown">
@@ -109,9 +109,19 @@
                 </ul>
             </li>
             <li class="user-profile dropdown dropdown-animated scale-left">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <img class="profile-img img-fluid" src="{{ asset('source/image/product/' . 'default-avatar.jpg') }}" alt=" ">
+                </a>
                 <ul class="dropdown-menu dropdown-md p-v-0">
-                    <li>
+                   <!--  <li>
+                        <ul class="list-media">
+                            <li class="list-item p-15">
+                                <div class="info">
+                                </div>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <!-- <li>
                         <ul class="list-media">
                             <li class="list-item p-15">
                                 <div class="info">
@@ -139,7 +149,7 @@
                             <span>{{ __('inbox') }}</span>
                             <span class="badge badge-pill badge-success pull-right">2</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             <i class="ti-power-off p-r-10"></i>

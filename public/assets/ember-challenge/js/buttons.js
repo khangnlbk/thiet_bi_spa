@@ -1,0 +1,1 @@
+var demoButtons=function(){return{init:function(){$(".loading-demo").click(function(){var btn=$(this);btn.button("loading");setTimeout(function(){btn.button("reset")},3000)})}}}();$(function(){demoButtons.init()});

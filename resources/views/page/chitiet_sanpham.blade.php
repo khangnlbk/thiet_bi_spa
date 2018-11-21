@@ -1,4 +1,5 @@
 @extends('master')
+@section('title', 'Product Detail')
 @section('content')	
 	<div class="inner-header">
 		<div class="container">

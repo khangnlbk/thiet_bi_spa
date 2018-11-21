@@ -11,6 +11,7 @@ use App\Customer;
 use App\Bill;
 use App\BillDetail;
 use App\User;
+use Illuminate\Support\Facades\Mail;
 use Session;
 use Hash;
 use Auth;
@@ -125,6 +126,13 @@ class PageController extends Controller
             $billDetail->save();
         }
 
+        $data = array(
+            'bill' => $bill,
+        );
+        Mail::send('mail.bill', $data, function ($message) {
+            $message->from('tinhhang22@gmail.com', 'Bill order');
+            $message->to('tinh.nc96@gmail.com')->subject('Test!');
+        });
         Session::forget('cart');
 
         return redirect()->back()->with('thongbao', 'Đặt hàng thành công');

@@ -1,4 +1,5 @@
 @extends('master')
+@section('title', 'Login')
 @section('content')
 
 	<div class="inner-header">

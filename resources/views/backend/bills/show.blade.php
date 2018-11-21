@@ -82,10 +82,11 @@
                             <div class="form-group">
                                 {{ Form::label(__(' Status :'), null, ['class' => 'control-label']) }}
                                 @if ($bill->status == 1) 
-                                    <i>Accepted</i>
+                                    <a href="{{ route('bills.edit', $bill->id) }}"><i>Accepted</i></a>
                                 @else
-                                    <i>Waiting Accept</i>
+                                    <a href="{{ route('bills.edit', $bill->id) }}"><i>Watting Accept</i></a>
                                 @endif
+
                             </div>
 
                             <div class="col-lg-10 col-lg-offset-2">

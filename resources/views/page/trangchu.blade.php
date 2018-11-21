@@ -1,4 +1,5 @@
 @extends('master')
+@section('title', 'Home')
 @section('content')
 <div class="fullwidthbanner-container">
 	<div class="fullwidthbanner">
