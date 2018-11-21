@@ -1,0 +1,17 @@
+{
+  "name": "demo-bower",
+  "version": "1.0.1",
+  "authors": [
+    "Chinnnnnnnn"
+  ],
+  "description": "Bower for PRJ1",
+  "main": "/",
+  "keywords": [
+    "fonticons"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ChinIndival/bower_lib.git",
+  "ignore": [
+    "README.md"
+  ]
+}

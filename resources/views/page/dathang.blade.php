@@ -1,4 +1,5 @@
 @extends('master')
+@section('title', 'Books')
 @section('content')
 <div class="inner-header">
 		<div class="container">
@@ -19,7 +20,10 @@
 	<div class="container">
 		<div id="content">
 		@if(Session::has('thongbao'))
-			<center><h5>{{Session::get('thongbao')}}, Hãy quay về <a href="{{ route('trang-chu') }}" style="color: #ff9933"><b>Trang chủ</b></a> để tiếp tục mua hàng!</h5></center>
+			<center><h6>{{Session::get('thongbao')}}
+				<p>Đặt hàng thành công! Vui lòng chờ trong ít phút,chúng tôi sẽ gọi điện ngay cho bạn xác nhận! vui lòng chú ý điện thoại! 
+				<p>Hãy quay về <a href="{{ route('trang-chu') }}" style="color: #ff9933"><b>Trang chủ</b></a> để tiếp tục mua hàng!
+				</h6></center>
 		@else
 			<form action="{{ route('dat-hang') }}" method="post" class="beta-form-checkout">
 				<input type="hidden" name="_token" value="{{csrf_token()}}">

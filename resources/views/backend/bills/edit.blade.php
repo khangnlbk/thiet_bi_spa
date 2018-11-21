@@ -15,7 +15,7 @@
                         <h2 class="header-title">{{ __('Bills') }}</h2>
                         <div class="header-sub-title">
                             <nav class="breadcrumb breadcrumb-dash">
-                                <a href="{{ route('products.index') }}" class="breadcrumb-item"><i class="ti-home p-r-5"></i>{{ __('home') }}</a>
+                                <a href="{{ route('bills.index') }}" class="breadcrumb-item"><i class="ti-home p-r-5"></i>{{ __('home') }}</a>
                                 <a class="breadcrumb-item" href="{{ route('products.index') }}">{{ __('Bills') }}</a>
                                 <span class="breadcrumb-item active">{{ __('edit') }}</span>
                             </nav>
