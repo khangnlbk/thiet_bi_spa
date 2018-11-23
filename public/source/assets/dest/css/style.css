@@ -64,7 +64,7 @@ body {
 font:13px/20px "Open Sans",sans-serif;
 font-style: sans-serif;
 color:black;
-background:#fff;
+background:white;
 font-weight:300;
 
 }
@@ -1080,15 +1080,15 @@ margin-left:25px
 }
 
 .header-bottom {
-border-top:1px solid #00bf00;
-border-bottom:1px solid #00bf00
+border-top:1px solid #228B22;
+border-bottom:1px solid #228B22;
 }
 .color-div{background:#5fbf00!important;}
 #footer.color-div input{background: #3f3f3f;border:1px solid #00bf00;}
 .color-div a{color:#00bf00;}
 
 .header-top {
-border-bottom:1px solid #00bf00;
+border-bottom:1px solid #5fbf00;
 height:47px
 }
 /* ==========================================================================

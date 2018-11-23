@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('manager/login', 'Manager\LoginController@getLogin')->name('manager.getLogin');
 Route::post('manager/login', 'Manager\LoginController@postLogin')->name('manager.postLogin');
@@ -29,7 +29,7 @@ Route::group(['prefix' => 'manager', 'namespace' => 'Manager', 'middleware' => '
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('index', [
+Route::get('/', [
 	'as'=>'trang-chu',
 	'uses'=>'PageController@getIndex'
 ]);
@@ -130,3 +130,6 @@ Route::get('sendemail', function () {
 
 	return "Your email has been sent successfully";
 });
+
+// Route::get('file','FileController@index');
+// Route::post('file','Filecontroller@doUpload');

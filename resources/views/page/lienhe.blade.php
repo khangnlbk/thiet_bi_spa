@@ -57,8 +57,8 @@
 					<h6> Địa chỉ</h6>
 					<br>
 					<p>
-						43C, 405/80, Bắc Cầu-Hà Nội
-						-Ngọc Thụy
+						-Phòng 907, chung cư Rainbow Linh Đàm
+						-Hoàng Mai
 						-Hà Nội
 					</p>
 					<div class="space20">&nbsp;</div>
@@ -68,7 +68,7 @@
 						Trường Đại học Bách khoa Hà Nội<br>
 						1 Đại Cồ Việt, Bách Khoa<br>
 						Hai Bà Trưng, Hà Nội<br>
-						<a href="mailto:hungph.dev.ict@gmail.com">hungph.dev.ict@gmail.com</a>
+						<a href="mailto:khangnl.bk@gmail.com">khangnl.bk@gmail.com</a>
 					</p>
 					<div class="space20">&nbsp;</div>
 					<h6> Tuyển dụng</h6>
@@ -76,7 +76,7 @@
 					<p>
 						Xây dựng một xã hội phát triển <br>
 						cùng với chúng tôi <br>
-						<a href="hr.hungph.dev.ict@gmail.com">hr.hungph.dev.ict@gmail.com</a>
+						<a href="khangnl.bk@gmail.com">khangnl.bk@gmail.com</a>
 					</p>
 				</div>
 			</div>

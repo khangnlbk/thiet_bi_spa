@@ -1,8 +1,10 @@
 @extends('backend.layouts.master')
 @section('title', 'Home')
 @section('content')
+
 <!-- <div class="page-container">
 	<div class="main-content">
+		<div bgcolor="red"></div>
 	    <div class="container-fluid">
 	        <div class="row">
 	            <div class="col-md-8">
@@ -493,5 +495,6 @@
 	        </div>
 	    </div>
 	</div>
-</div> -->
+</div>
+ -->
 @endsection

@@ -27,7 +27,7 @@
 	<div id="content" class="space-top-none">
 		<div class="main-content">
 			<div class="row">
-				<div class="col-sm-10">
+				<div class="col-sm-12">
 					<hr>
 					<div class="beta-products-list">
 						<h5><center><b><color="red">SẢN PHẨM MỚI</b></center></h5>
@@ -77,7 +77,7 @@
 					</div>
 					<div class="row">{{$new_product->fragment('pag1')->render()}}</div>
 				</div>
-				<div class="col-sm-2 aside">
+				<!-- <div class="col-sm-3 aside">
 					<div class="widget">
 					<br>
 					<h3 class="widget-title">New Products</h3>
@@ -110,7 +110,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>		
@@ -119,7 +119,7 @@
 	<div id="content" class="space-top-none">
 		<div class="main-content">
 			<div class="row">
-				<div class="col-sm-10">
+				<div class="col-sm-12">
 					<hr>
 					<div class="beta-products-list">
 						<h5><center><b>SẢN PHẨM KHUYẾN MÃI</b></center></h5>
@@ -162,7 +162,7 @@
 					<div class="row">{{$sale_product->fragment('pag1')->render()}}</div>
 				</div>
 				<br>
-				<div class="col-sm-2 aside">
+				<!-- <div class="col-sm-2 aside">
 					<h3 class="widget-title">New Products</h3>
 					<div class="widget-body">
 						<div class="beta-sales beta-lists">
@@ -195,7 +195,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div> <!-- best sellers widget -->
 	</div>

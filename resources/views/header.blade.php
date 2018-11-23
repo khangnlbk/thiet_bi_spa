@@ -3,8 +3,8 @@
 		<div class="container">
 			<div class="pull-left auto-width-left">
 				<ul class="top-menu menu-beta l-inline">
-					<li><a href="{{ route('lien-he') }}"><i class="fa fa-home"></i> 43C, 405/80, Bắc Cầu, Ngọc Thụy, Long Biên, Hà Nội</a></li>
-					<li><a href="{{ route('lien-he') }}"><i class="fa fa-phone"></i> 0965 818 552</a></li>
+					<li><a href="{{ route('lien-he') }}"><i class="fa fa-home"></i> Phòng 907, chung cư Rainbow Linh Đàm -Hoàng Mai -Hà Nội</a></li>
+					<li><a href="{{ route('lien-he') }}"><i class="fa fa-phone"></i> 090 600 6069</a></li>
 				</ul>
 			</div>
 			<div class="pull-right auto-width-right">
@@ -34,7 +34,8 @@
 				<a href="{{ route('trang-chu') }}" id="logo"><img src="source/assets/dest/images/logo1.png" width="40px" alt=""></a>
 			</div>
 			<div class="pull-left">
-				<a href="{{ route('trang-chu') }}"><h5> &nbsp Havan Group</h5></a>
+				<a href="{{ route('trang-chu') }}"><h5> &nbsp&nbsp Havan Group</h5></a>
+				<p style="color: green">&nbsp&nbsp&nbspTập đoàn hàng đầu Việt Nam cung cấp giải pháp toàn diện ngành FITNESS</p>
 			</div>
 			<div class="pull-right beta-components space-left ov">
 				<div class="space10">&nbsp;</div>
@@ -169,11 +170,15 @@
 									@endforeach
 								</ul>
 							</li>
+							
 
 						</ul>
 					</li>
 					<li><a href="{{ route('gioi-thieu') }}">Giới thiệu</a></li>
-					<li><a href="{{ route('lien-he') }}">Liên hệ</a></li>
+					<li><a href="{{ route('lien-he') }}">Liên hệ&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+					<li>
+						<a>Tổng số lượt truy cập:</a>
+					</li>
 				</ul>
 				<div class="clearfix"></div>
 			</nav>

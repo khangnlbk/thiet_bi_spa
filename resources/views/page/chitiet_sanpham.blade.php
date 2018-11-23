@@ -22,7 +22,7 @@
 				<div class="col-sm-9">
 					<div class="row">
 						<div class="col-sm-6">
-							<img src="source/image/product/{{$sanpham->image}}" alt="" height="250px">
+							<img src="source/image/product/{{$sanpham->image}}"  alt="" height="250px">
 						</div>
 						<div class="col-sm-6">
 							<div class="single-item-body">

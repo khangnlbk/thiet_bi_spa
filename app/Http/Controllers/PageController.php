@@ -130,8 +130,8 @@ class PageController extends Controller
             'bill' => $bill,
         );
         Mail::send('mail.bill', $data, function ($message) {
-            $message->from('tinhhang22@gmail.com', 'Bill order');
-            $message->to('tinh.nc96@gmail.com')->subject('Test!');
+            $message->from('havangroupfitness@gmail.com', 'Bill order');
+            $message->to('khangnl.bk@gmail.com')->subject('Test!');
         });
         Session::forget('cart');
 

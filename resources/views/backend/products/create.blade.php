@@ -221,6 +221,18 @@
                                         </div>
                                     </div>
                                     <div class="col-md-2"></div>
+
+                                    <!-- test upload -->
+                                   <!--  <div class="col-md-2"></div>    
+                                    <div class="col-md-4">
+                                            <form action="{{ url('file') }}" enctype="multipart/form-data" method="POST">
+                                            {{ csrf_field() }}
+                                            <input type="file" name="filesTest" required="true">
+                                            <br/>
+                                            <input type="submit" value="upload">
+                                        </form>
+                                    </div> -->
+
                                 </div>
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
