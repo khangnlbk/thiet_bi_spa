@@ -30,6 +30,7 @@
                             <thead>
                                 <tr>
                                     <th>{{ __('STT') }}</th>
+                                    <th>{{ __('ID Product') }}</th>
                                     <th>{{ __('Image') }}</th>
                                     <th>{{ __('Name') }}</th>
                                     <th>{{ __('Description') }}</th>
@@ -52,6 +53,7 @@
                                 @foreach($product_type as $value)
                                     <tr>
                                         <td>{{ $stt++ }}</td>
+                                        <td>{{ $value->id }}</td>
                                         <td>{{ $value->image }}</td>
                                         <td>{{ $value->name }}</td>
                                         <td>{!! str_limit($value->description, 50) !!}</td>

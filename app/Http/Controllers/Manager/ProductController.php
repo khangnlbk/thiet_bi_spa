@@ -31,9 +31,9 @@ class ProductController extends Controller
      */
     public function create()
     {
-        // $product_type = ProductType::all();
+        $product_type = ProductType::all();
 
-        return view('backend.products.create');
+        return view('backend.products.create', compact('product_type'));
     }
 
     /**
@@ -54,7 +54,6 @@ class ProductController extends Controller
             'new' => $request->new,
             'image' => $request->image,
         ]);
-
         $product->save();
         return view('backend.products.show', compact('product'))->with('success', __('create_success'));
     }

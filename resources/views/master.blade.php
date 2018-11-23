@@ -3,7 +3,7 @@
 <head>
 	<title>@yield('title')</title>
 	<link rel="apple-touch-icon" href="{{ asset('assets/demo-bower/assets/images/logo/apple-touch-icon.html') }}">
-    <link rel="shortcut icon" href="{{ asset('assets/demo-bower/assets/images/logo/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('assets/demo-bower/assets/images/logo/test.png') }}">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<base href="{{asset('')}}">
