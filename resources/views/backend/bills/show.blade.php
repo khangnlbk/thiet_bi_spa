@@ -82,7 +82,7 @@
                             <div class="form-group">
                                 {{ Form::label(__(' Status :'), null, ['class' => 'control-label']) }}
                                 @if ($bill->status == 1) 
-                                    <a href="{{ route('bills.edit', $bill->id) }}"><i>Accepted</i></a>
+                                    <i>Accepted</i>
                                 @else
                                     <a href="{{ route('bills.edit', $bill->id) }}"><i>Watting Accept</i></a>
                                 @endif

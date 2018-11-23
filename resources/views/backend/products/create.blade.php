@@ -30,7 +30,7 @@
                             {!! Form::open(['url' => route('products.store'),'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-4">
                                         <div class="p-h-10">
                                             <div class="form-group">
                                                 {{ Form::label(__('name'), null, ['class' => 'control-label']) }}
@@ -47,12 +47,33 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-4">
+                                        <div class="p-h-10">
+                                            <div class="form-group">
+                                                {{ Form::label(__('image'), null, ['class' => 'control-label']) }}
+                                                <div class="input-group">
+                                                    {{ Form::text('image', null, ['class' => 'form-control']) }}
+                                                    <div class="input-group-append">
+                                                    </div>
+                                                </div>
+                                                @if ($errors->has('image'))
+                                                <div class="alert alert-danger">
+                                                    <ul>
+                                                        @foreach ($errors->get('image') as $image)
+                                                        <li>{{ $image }}</li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="col-md-2"></div>
                                 </div>
-                               
+
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-4">
                                         <div class="p-h-10">
                                             <div class="form-group">
                                                 {{ Form::label(__('id_type'), null, ['class' => 'control-label']) }}
@@ -73,12 +94,45 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-4">
+                                        <br>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-overflow">
+                                                    <table id="dt-opt" class="table table-hover table-xl">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>{{ __('ID Type') }}</th>
+                                                                <th>{{ __('Name') }}</th>
+                                                            </tr>
+                                                        </thead>
+                                                        @if ($errors->has('name'))
+                                                        <div class="alert alert-danger">
+                                                            <ul>
+                                                                @foreach ($errors->get('name') as $name)
+                                                                <li>{{ $name }}</li>
+                                                                @endforeach
+                                                            </ul>
+                                                        </div>
+                                                        @endif
+                                                        <tbody> 
+                                                            @foreach($product_type as $value)
+                                                                <tr>
+                                                                    <td>{{ $value->id }}</td>
+                                                                    <td>{{ $value->name }}</td>
+                                                                </tr>
+                                                            @endforeach
+                                                        </tbody>                        
+                                                    </table>
+                                                </div> 
+                                            </div>       
+                                        </div>
+                                    </div>
                                     <div class="col-md-2"></div>  
-                                </div> 
-                                
+                                </div>
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-4">
                                         <div class="p-h-10">
                                             <div class="form-group">
                                                 {{ Form::label(__('unit_price'), null, ['class' => 'control-label']) }}
@@ -102,12 +156,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2"></div>  
-                                </div>
-
-                                <div class="row m-t-30">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-4">
                                         <div class="p-h-10">
                                             <div class="form-group">
                                                 {{ Form::label(__('promotion_price'), null, ['class' => 'control-label']) }}
@@ -120,13 +169,13 @@
                                                     </div>
                                                 </div>
                                                 @if ($errors->has('promotion_price'))
-                                                <div class="alert alert-danger">
-                                                    <ul>
-                                                        @foreach ($errors->get('promotion_price') as $promotion_price)
-                                                        <li>{{ $promotion_price }}</li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
+                                                    <div class="alert alert-danger">
+                                                        <ul>
+                                                            @foreach ($errors->get('promotion_price') as $promotion_price)
+                                                            <li>{{ $promotion_price }}</li>
+                                                            @endforeach
+                                                        </ul>
+                                                    </div>
                                                 @endif
                                             </div>
                                         </div>
@@ -136,37 +185,11 @@
 
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-4">
                                         <div class="p-h-10">
                                             <div class="form-group">
-                                                {{ Form::label(__('image'), null, ['class' => 'control-label']) }}
-                                                <div class="input-group">
-                                                    {{ Form::text('image', null, ['class' => 'form-control']) }}
-                                                    <div class="input-group-append">
-                                                    </div>
-                                                </div>
-                                                @if ($errors->has('image'))
-                                                <div class="alert alert-danger">
-                                                    <ul>
-                                                        @foreach ($errors->get('image') as $image)
-                                                        <li>{{ $image }}</li>
-                                                        @endforeach
-                                                    </ul>
-                                                </div>
-                                                @endif
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2"></div>  
-                                </div>
-                                
-                                <div class="row m-t-30">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-8">
-                                        <div class="p-h-10">
-                                            <div class="form-group">
-                                                {{ Form::label(__('new'), null, ['class' => 'control-label']) }}
-                                                {{ Form::text('new', null, ['class' => 'form-control']) }}
+                                                {{ Form::label(__('New'), null, ['class' => 'col-lg-3 control-label']) }}
+                                                {{ Form::select('new', ['0' => __('Không phải sản phẩm mới'), '1' => __('Sản phẩm mới')], null, ['class' => 'form-control']) }}  
                                                 @if ($errors->has('new'))
                                                 <div class="alert alert-danger">
                                                     <ul>
@@ -179,11 +202,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2"></div>
-                                </div>
-                                <div class="row m-t-30">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-8">
+                                    <div class="col-md-4">
                                         <div class="p-h-10">
                                             <div class="form-group">
                                                 {{ Form::label(__('unit'), null, ['class' => 'control-label']) }}
@@ -201,7 +220,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-2"></div>
-                                </div> 
+                                </div>
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
                                     <div class="col-md-8">
