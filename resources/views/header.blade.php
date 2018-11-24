@@ -91,11 +91,84 @@
 			<nav class="main-menu">
 				<ul class="l-inline ov">
 					<li><a href="{{route('trang-chu') }}">Trang chủ</a></li>
-					<li><a href="{{route('loai-san-pham', '1') }}">Sản phẩm</a>
+					<li><a>Gia đình</a>
 						<ul class="sub-menu">
-							@foreach($loai_sp as $loai_sp)
-								<li><a href="{{route('loai-san-pham', $loai_sp->id) }}">{{$loai_sp->name}}</a></li>
-							@endforeach
+							<li><a>Loai1</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Loai1")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
+							<li><a>Loai2</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Loai2")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
+							<li><a>Loai3</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Loai3")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
+							<li><a>Loai4</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Loai4")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a>Thiết bị Gym</a>
+						<ul class="sub-menu">
+							<li><a>Gym1</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Gym1")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
+							<li><a>Gym2</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Gym2")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
+							<li><a>Gym3</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Gym3")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
+							<li><a>Gym4</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Gym4")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
 
 						</ul>
 					</li>

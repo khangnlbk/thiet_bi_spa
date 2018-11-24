@@ -31,6 +31,8 @@
                                 <tr>
                                     <th>{{ __('STT') }}</th>
                                     <th>{{ __('ID Product') }}</th>
+                                    <th>{{ __('Parent Type') }}</th>
+                                    <th>{{ __('Category') }}</th>
                                     <th>{{ __('Image') }}</th>
                                     <th>{{ __('Name') }}</th>
                                     <th>{{ __('Description') }}</th>
@@ -54,6 +56,8 @@
                                     <tr>
                                         <td>{{ $stt++ }}</td>
                                         <td>{{ $value->id }}</td>
+                                        <td>{{ $value->parent_type }}</td>
+                                        <td>{{ $value->category }}</td>
                                         <td>{{ $value->image }}</td>
                                         <td>{{ $value->name }}</td>
                                         <td>{!! str_limit($value->description, 50) !!}</td>

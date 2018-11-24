@@ -20,8 +20,9 @@ class ProductController extends Controller
     public function index()
     {
         $product = Product::all();
+        $product_type = ProductType::all();
 
-        return view('backend.products.index', compact('product'));
+        return view('backend.products.index', compact('product', 'product_type'));
     }
 
     /**
@@ -46,6 +47,7 @@ class ProductController extends Controller
     {
         $product = new Product([
             'name' => $request->name,
+            'name_type2' => $request->name_type2,
             'id_type' => $request->id_type,
             'description' => $request->description,
             'unit_price' => $request->unit_price,
@@ -67,8 +69,9 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = Product::findOrFail($id);
+        $product_type = ProductType::findOrFail($id);
 
-        return view('backend.products.show', compact('product'));
+        return view('backend.products.show', compact('product', 'product_type'));
     }
 
     /**
@@ -96,6 +99,7 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
         $product->name = $request->name;
+        $product->name_type2 = $request->name_type2;
         $product->image = $request->image;
         $product->id_type = $request->id_type;
         $product->description = $request->description;

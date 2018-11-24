@@ -735,7 +735,7 @@ margin-top:0
 }
 
 h4,.h4 {
-color:green;
+color:black;
 font-size:2.30769em;
 line-height:39.78px;
 font-family:"Open Sans",sans-serif;
@@ -744,7 +744,7 @@ margin-top:0
 }
 
 h5,.h5 {
-color:green;
+color:black;
 font-size:1.92308em;
 line-height:39.78px;
 font-family:"Open Sans",sans-serif;
@@ -753,7 +753,7 @@ margin-top:0
 }
 
 h6,.h6 {
-color:green;
+color:black;
 font-size:1.92308em;
 line-height:39.78px;
 font-weight:300;
@@ -4578,7 +4578,7 @@ margin-bottom:15px
 
 hr {
 margin-top:10px;
-margin-bottom:10px
+margin-bottom:10px;
 }
 
 .mb50 {
@@ -5053,7 +5053,26 @@ position: relative;}
 /*********************/
 /*menu*/
 /*********************/
+.vertical-menu {
+    width: 260px;
+}
 
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #99e599;
+}
+
+.vertical-menu a.active {
+    background-color: #5fbf00;
+    color: white;
+}
 .main-menu>ul.l-inline> li> a{padding: 10px 22px;
 
     -webkit-font-smoothing: antialiased;

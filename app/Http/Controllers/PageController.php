@@ -22,8 +22,8 @@ class PageController extends Controller
 
     public function getIndex() {
         $slide = Slide::all();
-        $new_product = Product::where('new', 1)->paginate(8,['*'],'pag1');
-        $sale_product = Product::where('promotion_price', '<>', 0 )->paginate(8,['*'],'pag2');
+        $new_product = Product::where('new', 1)->paginate(6,['*'],'pag1');
+        $sale_product = Product::where('promotion_price', '<>', 0 )->paginate(6,['*'],'pag2');
         // var_dump($slide);
         // dd($new_product);
         // exit;
@@ -33,7 +33,7 @@ class PageController extends Controller
     }
 
     public function getProductType($type) {
-        $sp_theoloai = Product::where('id_type', $type)->get();
+        $sp_theoloai = Product::where('id_type', $type)->paginate(6,['*'],'pag1');
         $sp_khac = Product::where('id_type', '<>', $type)->paginate(3);
         $loai_sp = ProductType::all();
         $loai_sanpham = ProductType::where('id', $type)->first();

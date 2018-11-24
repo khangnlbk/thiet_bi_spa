@@ -14,12 +14,12 @@ class CreateBillsTable extends Migration
     public function up()
     {
         Schema::create('bills', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id')->nullable();
             $table->integer('id_customer')->unsigned();
-            $table->date('date_order');
-            $table->string('total');
-            $table->string('payment');
-            $table->string('note');
+            $table->date('date_order')->nullable();
+            $table->string('total')->nullable();
+            $table->string('payment')->nullable();
+            $table->string('note')->nullable();
             $table->boolean('status')->nullable();
             $table->timestamps();
         });
