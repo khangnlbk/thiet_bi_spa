@@ -73,7 +73,7 @@
 
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="p-h-10">
                                             <div class="form-group">
                                                 {{ Form::label(__('id_type'), null, ['class' => 'control-label']) }}
@@ -92,9 +92,10 @@
                                                 </div>
                                                 @endif
                                             </div>
+
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-5">
                                         <br>
                                         <div class="card">
                                             <div class="card-body">
@@ -119,7 +120,7 @@
                                                             @foreach($product_type as $value)
                                                                 <tr>
                                                                     <td>{{ $value->id }}</td>
-                                                                    <td>{{ $value->name }}</td>
+                                                                    <td>{{ $value->parent_type }}&nbsp/&nbsp{{ $value->category }}&nbsp/&nbsp{{ $value->name }}</td>
                                                                 </tr>
                                                             @endforeach
                                                         </tbody>                        

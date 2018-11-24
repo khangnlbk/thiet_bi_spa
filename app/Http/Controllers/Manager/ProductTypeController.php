@@ -45,6 +45,8 @@ class ProductTypeController extends Controller
     {
         $product_type = new ProductType([
             'name' => $request->name,
+            'parent_type' => $request->parent_type,
+            'category' => $request->category,
             'description' => $request->description,
             'image' => $request->image,
         ]);
@@ -90,6 +92,7 @@ class ProductTypeController extends Controller
     {
         $product_type = ProductType::findOrFail($id);
         $product_type->name = $request->name;
+        $product_type->category = $request->category;
         $product_type->image = $request->image;
         $product_type->description = $request->description;
         $product_type->save();

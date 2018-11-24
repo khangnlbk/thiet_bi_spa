@@ -4,7 +4,7 @@
 	<div class="inner-header">
 		<div class="container">
 			<div class="pull-left">
-				<h6 class="inner-title">Chi tiết sản phẩm : {{$sanpham->name}}</h6>
+				<p><h5 class="pull-left">Chi tiết sản phẩm : <i>{{$sanpham->name}}</i></h5></p>
 			</div>
 			<div class="pull-right">
 				<div class="beta-breadcrumb font-large">
@@ -78,7 +78,7 @@
 					</div>
 					<div class="space50">&nbsp;</div>
 					<div class="beta-products-list">
-						<h4>Sản phẩm cùng loại</h4>
+						<p><h5>Sản phẩm cùng loại</h5></p>
 						<br>
 						<br>
 

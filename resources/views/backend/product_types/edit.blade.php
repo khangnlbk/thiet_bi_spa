@@ -24,7 +24,7 @@
                     </div>
                     <div class="card">
                         <div class="card-header border bottom">
-                            <h4 class="card-title">{{ __('edit_product_type') }}</h4>
+                            <h4 class="card-title">{{ __('Edit product type') }}</h4>
                         </div>
                         <div class="card-body">
                             {!! Form::model($product_type, ['route' => ['product_types.update', $product_type->id]]) !!}
@@ -54,7 +54,23 @@
                                     </div>
                                     <div class="col-md-2"></div>
                                 </div>
-                                
+
+                                <div class="row m-t-30">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="p-h-10">
+                                            <div class="form-group">
+                                                {{ Form::label(__('category'), null, ['class' => 'col-lg-2 control-label']) }}
+                                                @if($product_type->parent_type == "Gia đình")
+                                                {{ Form::select('category', ['Loai1'=>'Loai1', 'Loai2'=>'Loai2', 'Loai3'=>'Loai3', 'Loai4'=>'Loai4'], null, ['class' => 'form-control']) }}
+                                                @else
+                                                {{ Form::select('Category', ['Gym1'=>'Gym1', 'Gym2'=>'Gym2', 'Gym3'=>'Gym3', 'Gym4'=>'Gym4'], null, ['class' => 'form-control']) }}
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
                                     <div class="col-md-8">

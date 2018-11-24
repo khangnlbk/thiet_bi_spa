@@ -28,6 +28,48 @@
                         </div>
                         <div class="card-body">
                             {!! Form::open(['url' => route('product_types.store'),'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+                                 <div class="row m-t-30">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="p-h-10">
+                                            <div class="form-group">
+                                                {{ Form::label(__('Parent Type'), null, ['class' => 'col-lg-2 control-label']) }}
+                                                {{ Form::select('parent_type', ['Gia đình'=>'Gia đình', 'Thiết bị Gym'=>'Thiết bị Gym'], null, ['class' => 'form-control']) }}
+                                                @if ($errors->has('parent_type'))
+                                                <div class="alert alert-danger">
+                                                    <ul>
+                                                        @foreach ($errors->get('parent_type') as $parent_type)
+                                                        <li>{{ $parent_type }}</li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>  
+                                </div>
+                                <div class="row m-t-30">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <div class="p-h-10">
+                                            <div class="form-group">
+                                                {{ Form::label(__('Category'), null, ['class' => 'col-lg-2 control-label']) }}
+                                                {{ Form::select('category', ['Loai1'=>'Loai1', 'Loai2'=>'Loai2', 'Loai3'=>'Loai3', 'Loai4'=>'Loai4', 'Gym1'=>'Gym1', 'Gym2'=>'Gym2','Gym3'=>'Gym3', 'Gym4'=>'Gym4'], null, ['class' => 'form-control']) }}
+                                                @if ($errors->has('category'))
+                                                <div class="alert alert-danger">
+                                                    <ul>
+                                                        @foreach ($errors->get('category') as $category)
+                                                        <li>{{ $category }}</li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>  
+                                </div>
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
                                     <div class="col-md-8">
@@ -49,7 +91,6 @@
                                     </div>
                                     <div class="col-md-2"></div>
                                 </div>
-                               
                                 
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>

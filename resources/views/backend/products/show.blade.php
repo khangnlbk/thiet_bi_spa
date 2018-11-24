@@ -32,6 +32,10 @@
                             <h2 class="m-b-5">Name: {{ $product->name }}</h2>
                             <br>
                             <div class="form-group">
+                                {{ Form::label(__('product Type :'), null, ['class' => 'control-label']) }}
+                                <span>{{ $product_type->parent_type }}&nbsp/&nbsp{{ $product_type->category }}&nbsp/&nbsp{{ $product_type->name }}</span>
+                            </div>
+                            <div class="form-group">
                                 {{ Form::label(__('unit_price :'), null, ['class' => 'control-label']) }}
                                 <span>{{ $product->unit_price }}</span>
                             </div>
@@ -48,6 +52,7 @@
                                 {{ Form::label(__('new :'), null, ['class' => 'control-label']) }}
                                 <span>{{ $product->new }}</span>
                             </div>
+                            <br>
                             <div class="col-lg-10 col-lg-offset-2">
                                 <a href="{{ route('backend.home') }}" class="btn btn-default">{{ __('Back') }}</a>
                                 <a href="{{ route('products.edit', $product->id) }}" class="btn btn-success">{{ __('Edit') }}</a>
