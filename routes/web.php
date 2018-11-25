@@ -18,7 +18,7 @@
 Route::get('manager/login', 'Manager\LoginController@getLogin')->name('manager.getLogin');
 Route::post('manager/login', 'Manager\LoginController@postLogin')->name('manager.postLogin');
 
-Route::group(['prefix' => 'manager', 'namespace' => 'Manager', 'middleware' => 'Manager']
+Route::group(['prefix' => 'manager', 'namespace' => 'Manager', 'middleware' => 'manager']
 , function () {
     Route::resource('products', 'ProductController');
     Route::resource('product_types', 'ProductTypeController');

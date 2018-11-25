@@ -59,7 +59,7 @@
 					<h6> Địa chỉ</h6>
 					<br>
 					<p>
-						-Phòng 907, chung cư Rainbow Linh Đàm
+						-Phòng 1609, chung cư Rainbow Linh Đàm
 						-Hoàng Mai
 						-Hà Nội
 					</p>

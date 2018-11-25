@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="pull-left auto-width-left">
 				<ul class="top-menu menu-beta l-inline">
-					<li><a href="{{ route('lien-he') }}"><i class="fa fa-home"></i> Phòng 907, chung cư Rainbow Linh Đàm -Hoàng Mai -Hà Nội</a></li>
+					<li><a href="{{ route('lien-he') }}"><i class="fa fa-home"></i> Phòng 1609, chung cư Rainbow Linh Đàm -Hoàng Mai -Hà Nội</a></li>
 					<li><a href="{{ route('lien-he') }}"><i class="fa fa-phone"></i> 090 600 6069</a></li>
 				</ul>
 			</div>

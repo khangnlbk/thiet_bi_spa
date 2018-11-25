@@ -66,7 +66,7 @@
 					<div>
 						<div class="contact-info">
 							<i class="fa fa-map-marker"></i>
-							<p>phòng 907 chung cư Rainbow, Linh Đàm Hoàng Mai Hà Nội. </p>
+							<p>Phòng 1609 chung cư Rainbow, Linh Đàm Hoàng Mai Hà Nội. </p>
                             <p>Điện thoại: +84 906006069</p>
 						</div>
                         <br>
