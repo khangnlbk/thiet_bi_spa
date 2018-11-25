@@ -124,7 +124,7 @@
 					<div class="beta-products-list">
 						<h5><center><b>SẢN PHẨM KHUYẾN MÃI</b></center></h5>
 						<br>
-						<center><p><i> Chúng tôi mang đến cho khách hàng những sản phẩm với mức gía cạnh tranh và tất nhiên là luôn có những chương trình khuyến mãi hấp dẫn.</i></p></center>
+						<center><p><i> Chúng tôi mang đến cho khách hàng những sản phẩm với mức giá cạnh tranh và tất nhiên là luôn có những chương trình khuyến mãi hấp dẫn.</i></p></center>
 						<br>
 						<p class="pull-left"><center><b>Chúng tôi đang có {{$sale_product->total()}} sản phẩm khuyến mãi</b></center></p>
 						<hr>

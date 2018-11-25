@@ -16,7 +16,7 @@
 		</div>
 		<hr>
 	</div>
-	<div class="container">
+	<!-- <div class="container">
 		<div id="content">
 			<div class="our-history">
 				<h4><center>LỊCH SỬ XÂY DỰNG VÀ PHÁT TRIỂN</h5>
@@ -200,8 +200,7 @@
 				</div>
 			</div>
 		</div>
-	</div> <!-- .beta-counter block end -->
-	<hr>
+	</div> 
 	<div class="container">
 		<div id="content">
 		<h4><CENTER>LÃNH ĐẠO</h4>
@@ -232,5 +231,50 @@
 				</div>
 			</div>
 		</div>
+	</div> -->
+	<div class="col-sm-3"></div>
+	<div class="col-sm-6">
+			<h3 style="color: black"><em style="color: red">HAVANFITNESS GROUP</em> chuyên cung cấp máy tập thể hình cao cấp</h3>
+			<br>
+			<p style="color: black; font-size:140%"><b style="color: red">HAVANFITNESS GROUP</b> là đơn vị đi đầu trong lĩnh vực cung cấp thiết bị thể hình phòng GYM, các loại máy tập gym, may tap the hinh chất lượng cao, máy chạy bộ nhập khẩu trên thị trường Việt Nam. </p>
+			<br>
+			<p style="color: black; font-size: 140%">Với tiêu chí máy khỏe, bền – mẫu mã hiện đại, <b style="color: red">HAVANFITNESS GROUP</b> đã đồng hành cùng hàng nghìn phòng tập và hàng triệu gia đình trong lĩnh vực chăm sóc sức khỏe. Đặc biệt, với đội ngũ kỹ thuật viên chuyên nghiệp, <b style="color: red">HAVANFITNESS GROUP</b> tự hào cung cấp chế độ hậu mãi tốt nhất, bảo hành 2 năm – bảo trì trọn đời toàn bộ máy.</p>
+			<br>
+			<p style="color: black; font-size: 140%"><b>Bạn đang cần setup một phòng tập GYM chuyên nghiệp? </b></p>
+			<br>
+			<p style="color: black; font-size: 140%">Hay bạn đang cần mua máy tập thể hình, máy tập thể dục tại nhà như máy chạy bộ điện, xe đạp tập thể dục, máy tập cơ bụng,…giúp giảm cân, giảm mỡ thừa, săn chắc cơ bắp</p>
+			<br>
+			<p style="color: black; font-size: 140%">Chỉ cần một cuộc gọi tới hotline <b style="color: red">0906006069</b>, <b style="color: red">HAVANFITNESS GROUP</b> sẽ tư vấn giải pháp tốt nhất mà bạn đang cần!</p>
+			<br>
+			<p style="color: black; font-size: 140%"><b>Sản phẩm máy tập gym chất lượng cao</b></p>
+			<br>
+			<p style="color: black; font-size: 140%">Trung tâm thể hình <b style="color: red">HAVANFITNESS GROUP</b> có hệ thống đại lý trên khắp ba miền Bắc – Trung – Nam, <b style="color: red">HAVANFITNESS GROUP</b> chuyên cung cấp các thiết bị máy tập thể hình, máy tập gym cho các phòng tập chủ yếu ở các thành phố lớn như Hà Nội, Sài Gòn, Đà Nẵng… Trong thời gian tới chúng tôi sẽ nỗ lực đưa thương hiệu <b style="color: red">HAVANFITNESS GROUP</b> đến mọi tỉnh thành trên toàn quốc.</p>
+			<br>
+			<p style="color: black; font-size: 140%">Với chế độ bảo dưỡng, bảo trì, bảo hành và chăm sóc khách hàng tốt nhất theo đúng tiêu chuẩn của hãng, quý khách hàng hoàn toàn có thể yên tâm lựa chọn mua sản phẩm của chúng tôi.</p>
+			<br>
+			<p style="color: black; font-size: 140%">Đến với trung tâm <b style="color: red">HAVANFITNESS GROUP</b> quý khách sẽ được trải nghiệm trực tiếp với các máy tập gym hiện đại nhất hiện nay, các tính năng giải trí cộng với nhiều tiện ích khác. Hiện tại trung tâm chúng tôi có showroom lớn với nhiều sản phẩm trưng bày sẵn có để quý khách có thể lựa chọn ngay nếu cần.
+			</p>
+			<br>
+			<p style="color: black; font-size: 140%"><b>Mục tiêu của trung tâm <b style="color: red">HAVANFITNESS GROUP</b></b></p>
+			<br>
+			<p style="color: black; font-size: 140%">Trở thành một trong những đơn vị hàng đầu Việt Nam chuyên cung cấp các loại máy tập thể hình và các thiết bị phòng tập chuyên nghiệp.</p>
+			<br>
+			<p style="color: black; font-size: 140%"><b>Phương châm hoạt động của <b style="color: red">HAVANFITNESS GROUP</b></b></p>
+			<br>
+			<p style="color: black; font-size: 140%">Trung tâm <b style="color: red">HAVANFITNESS GROUP</b> luôn đặt chữ tín lên đầu, cam kết mang lại những sản phẩm dịch vụ tốt nhất cho quý khách. </p>
+			<br>
+			<p style="color: black; font-size: 140%"><b>Giá trị cốt lõi</b></p>
+			<br>
+			<p style="color: black; font-size: 140%">Sản phẩm chất lượng nhất hiện nay – Giá cả phải chăng.</p>
+			<br>
+			<p style="color: black; font-size: 140%">Con người tại trung tâm <b style="color: red">HAVANFITNESS GROUP</b> có tầm nhìn, hiểu biết, chuyên nghiệp, “chinh phục” những khách hàng khó tính nhất.</p>
+			<br>
+			<p style="color: black; font-size: 140%">Dịch vụ bảo hành nhanh chóng, uy tín, chất lượng.</p>
+			<br>
+			<p style="color: black; font-size: 140%"><b style="color: red">HAVANFITNESS GROUP</b> luôn tìm tòi để bắt kịp được xu hướng, công nghệ nhằm cung cấp những sản phẩm chất lượng cho khách hàng.</p>
+			<br>
+			<br>
+			<br>
+			<br>
 	</div>
 @endsection
