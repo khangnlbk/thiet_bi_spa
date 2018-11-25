@@ -35,6 +35,7 @@
                                     <th>{{ __('Name') }}</th>
                                     <th>{{ __('Description') }}</th>
                                     <th>{{ __('Unit_price') }}</th>
+                                    <th>{{ __('Unit') }}</th>
                                     <th>{{ __('Promotion_price') }}</th>
                                     <th></th>
                                 </tr>
@@ -61,6 +62,7 @@
                                         <td>{!! str_limit($value->description, 50) !!}</td>
                                         <td>{{ $value->unit_price }} {{ __('VND') }}</td>
                                         <td>{{ $value->promotion_price }} {{ __('VND') }}</td>
+                                        <td>{{ $value->unit }}</td>
                                         <td class="font-size-18 text-center">
                                             <a href="{{ route('products.edit', $value->id) }}" class="text-gray m-r-15"><i class="ti-pencil"></i></a>
                                             <a data-toggle="modal" data-target="#basic-modal" data-url="{{ route('products.destroy', $value->id) }}" class="text-gray m-r-15"><i class="ti-trash"></i></a>
