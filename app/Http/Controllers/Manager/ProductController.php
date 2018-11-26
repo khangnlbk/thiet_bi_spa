@@ -47,17 +47,23 @@ class ProductController extends Controller
     {
         $product = new Product([
             'name' => $request->name,
-            'name_type2' => $request->name_type2,
-            'id_type' => $request->id_type,
             'description' => $request->description,
+            'id_type' => $request->id_type,
             'unit_price' => $request->unit_price,
             'promotion_price' => $request->promotion_price,
             'unit' => $request->unit,
             'new' => $request->new,
-            'image' => $request->image,
+            'image' => $request->image->getClientOriginalName(),
         ]);
+        // dd($request->image->getClientOriginalName());
+        if($request->hasFile('image')) {
+                $filename = $request->image->getClientOriginalName();
+                $request->image->move(config('app.link_product'), $filename);
+        }
+        // dd($product);
         $product->save();
-        return view('backend.products.show', compact('product'))->with('success', __('create_success'));
+
+        return view('backend.home', compact('product'))->with('success', __('create_success'));
     }
 
     /**
@@ -69,9 +75,8 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = Product::findOrFail($id);
-        $product_type = ProductType::findOrFail($id);
 
-        return view('backend.products.show', compact('product', 'product_type'));
+        return view('backend.products.show', compact('product'));
     }
 
     /**
@@ -99,8 +104,6 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
         $product->name = $request->name;
-        $product->name_type2 = $request->name_type2;
-        $product->image = $request->image;
         $product->id_type = $request->id_type;
         $product->description = $request->description;
         $product->unit_price = $request->unit_price;

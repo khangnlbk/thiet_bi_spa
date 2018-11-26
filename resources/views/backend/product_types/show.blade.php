@@ -22,12 +22,13 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row m-v-30">
-                        <div class="col-sm-5">
+                        <div class="col-sm-6">
                             <div class="single-item-header">
-                                <a><img src="{{ asset('source/image/product/' . $product_type->image) }}" alt="" height="300px"></a>
+                                <a><img src="{{ asset('source/image/product/' . $product_type->image) }}" alt="" height="100px"></a>
                             </div>
+
                         </div>
-                        <div class="col-sm-7 text-center text-sm-left">
+                        <div class="col-sm-6 text-center text-sm-left">
                             <br>
                             <h2 class="m-b-5">Name: {{ $product_type->name }}</h2>
                             <br>

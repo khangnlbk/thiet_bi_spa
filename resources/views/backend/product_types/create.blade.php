@@ -34,7 +34,7 @@
                                         <div class="p-h-10">
                                             <div class="form-group">
                                                 {{ Form::label(__('Parent Type'), null, ['class' => 'col-lg-2 control-label']) }}
-                                                {{ Form::select('parent_type', ['Gia đình'=>'Gia đình', 'Thiết bị Gym'=>'Thiết bị Gym'], null, ['class' => 'form-control']) }}
+                                                {{ Form::select('parent_type', ['Thiết bị gia đình'=>'Thiết bị gia đình', 'Thiết bị phòng tập'=>'Thiết bị phòng tập'], null, ['class' => 'form-control']) }}
                                                 @if ($errors->has('parent_type'))
                                                 <div class="alert alert-danger">
                                                     <ul>
@@ -55,7 +55,7 @@
                                         <div class="p-h-10">
                                             <div class="form-group">
                                                 {{ Form::label(__('Category'), null, ['class' => 'col-lg-2 control-label']) }}
-                                                {{ Form::select('category', ['Loai1'=>'Loai1', 'Loai2'=>'Loai2', 'Loai3'=>'Loai3', 'Loai4'=>'Loai4', 'Gym1'=>'Gym1', 'Gym2'=>'Gym2','Gym3'=>'Gym3', 'Gym4'=>'Gym4'], null, ['class' => 'form-control']) }}
+                                                {{ Form::select('category', ['Xe đạp gia đình'=>'Xe đạp gia đình', 'Máy chạy bộ gia đình'=>'Máy chạy bộ gia đình', 'Dàn tập tạ đa năng'=>'Dàn tập tạ đa năng', 'Máy rung Massage'=>'Máy rung Massage', 'Máy chạy phòng tập'=>'Máy chạy phòng tập', 'Xe đạp phòng tập'=>'Xe đạp phòng tập','Máy tập toàn thân'=>'Máy tập toàn thân', 'Máy cơ'=>'Máy cơ', 'Ghế tập'=>'Ghế tập', 'Phần tạ'=>'Phần tạ', 'Thanh đòn'=>'Thanh đòn', 'Phụ kiện'=>'Phụ kiện'], null, ['class' => 'form-control']) }}
                                                 @if ($errors->has('category'))
                                                 <div class="alert alert-danger">
                                                     <ul>
@@ -99,7 +99,7 @@
                                             <div class="form-group">
                                                 {{ Form::label(__('image'), null, ['class' => 'control-label']) }}
                                                 <div class="input-group">
-                                                    {{ Form::text('image', null, ['class' => 'form-control']) }}
+                                                    {{ Form::file('image', null, ['class' => 'form-control']) }}
                                                     <div class="input-group-append">
                                                     </div>
                                                 </div>

@@ -32,8 +32,8 @@
                             <h2 class="m-b-5">Name: {{ $product->name }}</h2>
                             <br>
                             <div class="form-group">
-                                {{ Form::label(__('product Type :'), null, ['class' => 'control-label']) }}
-                                <span>{{ $product_type->parent_type }}&nbsp/&nbsp{{ $product_type->category }}&nbsp/&nbsp{{ $product_type->name }}</span>
+                                {{ Form::label(__('id_type :'), null, ['class' => 'control-label']) }}
+                                <span>{{ $product->id_type }}</span>
                             </div>
                             <div class="form-group">
                                 {{ Form::label(__('unit_price :'), null, ['class' => 'control-label']) }}
@@ -51,6 +51,10 @@
                             <div class="form-group">
                                 {{ Form::label(__('new :'), null, ['class' => 'control-label']) }}
                                 <span>{{ $product->new }}</span>
+                            </div>
+                            <div class="form-group">
+                                {{ Form::label(__('unit :'), null, ['class' => 'control-label']) }}
+                                <span>{{ $product->unit }}</span>
                             </div>
                             <br>
                             <div class="col-lg-10 col-lg-offset-2">

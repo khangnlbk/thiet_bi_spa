@@ -31,7 +31,7 @@
 	<div class="header-body">
 		<div class="container beta-relative">
 			<div class="pull-left">
-				<a href="{{ route('trang-chu') }}" id="logo"><img src="source/assets/dest/images/logo1.png" width="40px" alt=""></a>
+				<a href="{{ route('trang-chu') }}" id="logo"><img src="source/assets/dest/images/logo1.png" width="80px" alt=""></a>
 			</div>
 			<div class="pull-left">
 				<a href="{{ route('trang-chu') }}"><h5> &nbsp&nbsp Havan Group</h5></a>
@@ -92,39 +92,39 @@
 			<nav class="main-menu">
 				<ul class="l-inline ov">
 					<li><a href="{{route('trang-chu') }}">Trang chủ</a></li>
-					<li><a>Gia đình</a>
+					<li><a>Thiết bị gia đình</a>
 						<ul class="sub-menu">
-							<li><a>Loai1</a>
+							<li><a>Xe đạp gia đình</a>
 								<ul class="sub-menu">
 									@foreach($loai_sp as $value)
-										@if($value->category == "Loai1")
+										@if($value->category == "Xe đạp gia đình")
 										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
 										@endif
 									@endforeach
 								</ul>
 							</li>
-							<li><a>Loai2</a>
+							<li><a>Máy chạy bộ gia đình</a>
 								<ul class="sub-menu">
 									@foreach($loai_sp as $value)
-										@if($value->category == "Loai2")
+										@if($value->category == "Máy chạy bộ gia đình")
 										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
 										@endif
 									@endforeach
 								</ul>
 							</li>
-							<li><a>Loai3</a>
+							<li><a>Dàn tập tạ đa năng</a>
 								<ul class="sub-menu">
 									@foreach($loai_sp as $value)
-										@if($value->category == "Loai3")
+										@if($value->category == "Dàn tập tạ đa năng")
 										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
 										@endif
 									@endforeach
 								</ul>
 							</li>
-							<li><a>Loai4</a>
+							<li><a>Máy rung Massage</a>
 								<ul class="sub-menu">
 									@foreach($loai_sp as $value)
-										@if($value->category == "Loai4")
+										@if($value->category == "Máy rung Massage")
 										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
 										@endif
 									@endforeach
@@ -132,45 +132,80 @@
 							</li>
 						</ul>
 					</li>
-					<li><a>Thiết bị Gym</a>
+					<li><a>Thiết bị phòng tập</a>
 						<ul class="sub-menu">
-							<li><a>Gym1</a>
+							<li><a>Máy chạy phòng tập</a>
 								<ul class="sub-menu">
 									@foreach($loai_sp as $value)
-										@if($value->category == "Gym1")
+										@if($value->category == "Máy chạy phòng tập")
 										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
 										@endif
 									@endforeach
 								</ul>
 							</li>
-							<li><a>Gym2</a>
+							<li><a>Xe đạp phòng tập</a>
 								<ul class="sub-menu">
 									@foreach($loai_sp as $value)
-										@if($value->category == "Gym2")
+										@if($value->category == "Xe đạp phòng tập")
 										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
 										@endif
 									@endforeach
 								</ul>
 							</li>
-							<li><a>Gym3</a>
+							<li><a>Máy tập toàn thân</a>
 								<ul class="sub-menu">
 									@foreach($loai_sp as $value)
-										@if($value->category == "Gym3")
+										@if($value->category == "Máy tập toàn thân")
 										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
 										@endif
 									@endforeach
 								</ul>
 							</li>
-							<li><a>Gym4</a>
+							<li><a>Máy cơ</a>
 								<ul class="sub-menu">
 									@foreach($loai_sp as $value)
-										@if($value->category == "Gym4")
+										@if($value->category == "Máy cơ")
 										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
 										@endif
 									@endforeach
 								</ul>
 							</li>
-							
+							<li><a>Ghế tập</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Ghế tập")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
+							<li><a>Phần tạ</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Phần tạ")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
+							<li><a>Thanh đòn</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Thanh đòn")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
+							<li><a>Phụ kiện</a>
+								<ul class="sub-menu">
+									@foreach($loai_sp as $value)
+										@if($value->category == "Phụ kiện")
+										<li><a href="{{route('loai-san-pham', $value->id) }}">{{$value->name}}</a></li>
+										@endif
+									@endforeach
+								</ul>
+							</li>
 
 						</ul>
 					</li>
@@ -180,6 +215,7 @@
 						<a>Tổng số lượt truy cập:</a>
 					</li>
 				</ul>
+
 				<div class="clearfix"></div>
 			</nav>
 		</div> <!-- .container -->

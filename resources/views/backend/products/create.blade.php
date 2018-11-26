@@ -52,7 +52,7 @@
                                             <div class="form-group">
                                                 {{ Form::label(__('image'), null, ['class' => 'control-label']) }}
                                                 <div class="input-group">
-                                                    {{ Form::text('image', null, ['class' => 'form-control']) }}
+                                                    {{ Form::file('image', null, ['class' => 'form-control']) }}
                                                     <div class="input-group-append">
                                                     </div>
                                                 </div>

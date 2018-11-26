@@ -31,7 +31,7 @@
                                 {{ method_field('PUT') }}
                                 <div class="row m-t-30">
                                     <div class="col-md-2"></div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-8">
                                         <div class="p-h-10">
                                             <div class="form-group">
                                                 {{ Form::label(__('name'), null, ['class' => 'control-label']) }}
@@ -39,14 +39,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <!-- <div class="col-md-4">
                                         <div class="p-h-10">
                                             <div class="form-group">
                                                 {{ Form::label(__('image'), null, ['class' => 'control-label']) }}
                                                 {{ Form::text('image', null, ['class' => 'form-control', 'value' => $product->image]) }}
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-2"></div>
                                 </div>
 

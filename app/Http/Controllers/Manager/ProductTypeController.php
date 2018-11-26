@@ -48,8 +48,12 @@ class ProductTypeController extends Controller
             'parent_type' => $request->parent_type,
             'category' => $request->category,
             'description' => $request->description,
-            'image' => $request->image,
+            'image' => $request->image->getClientOriginalName(),
         ]);
+        if($request->hasFile('image')) {
+                $filename = $request->image->getClientOriginalName();
+                $request->image->move(config('app.link_product'), $filename);
+        }
 
         $product_type->save();
         return view('backend.product_types.show', compact('product_type'))->with('success', __('create_success'));
@@ -93,7 +97,6 @@ class ProductTypeController extends Controller
         $product_type = ProductType::findOrFail($id);
         $product_type->name = $request->name;
         $product_type->category = $request->category;
-        $product_type->image = $request->image;
         $product_type->description = $request->description;
         $product_type->save();
 

@@ -59,7 +59,7 @@
                                         <td>{{ $value->parent_type }}</td>
                                         <td>{{ $value->category }}</td>
                                         <td>{{ $value->image }}</td>
-                                        <td>{{ $value->name }}</td>
+                                        <td><a href="{{ route('product_types.show', $value->id) }}">{{ $value->name }}</a></td>
                                         <td>{!! str_limit($value->description, 50) !!}</td>
                                         <td class="font-size-18 text-center">
                                             <a href="{{ route('product_types.edit', $value->id) }}" class="text-gray m-r-15"><i class="ti-pencil"></i></a>
