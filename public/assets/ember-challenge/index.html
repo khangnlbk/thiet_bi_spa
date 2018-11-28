@@ -1,0 +1,290 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <!-- /meta -->
+
+    <title>Cases List</title>
+
+    <!-- page level plugin styles -->
+    <link rel="stylesheet" href="plugins/table-sortable/theme.css">
+    <!-- /page level plugin styles -->
+
+    <!-- core styles -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- /core styles -->
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="css/skins/palette.css">
+    <link rel="stylesheet" href="css/fonts/font.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- template styles -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->  
+
+    <!-- load modernizer -->
+    <script src="plugins/modernizr.js"></script>
+
+    <style type="text/css">
+
+    .wrapper{
+      height: 1200px !important;
+      position: relative !important;      
+    }
+
+    .layout{
+      padding-top: 50px;
+    }
+
+    </style>
+
+</head>
+
+<!-- body -->
+
+<body>
+
+    <script type="text/x-handlebars">
+
+    <div class="app">
+
+        <!-- top header -->
+        <header class="header header-fixed navbar">
+
+            <div class="brand">
+                <!-- toggle offscreen menu -->
+                <a href="javascript:;" class="ti-menu off-left visible-xs" data-toggle="offscreen" data-move="ltr"></a>
+                <!-- /toggle offscreen menu -->
+
+                <!-- logo -->
+                <a href="#" class="navbar-brand">
+                    <img src="http://www.processmaker.com/sites/all/themes/pmthemev2/img/logo_PM_website.png" alt="">
+                </a>
+                <!-- /logo -->
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li class="hidden-xs">
+                    <!-- toggle small menu -->
+                    <a href="javascript:;" class="toggle-sidebar">
+                        <i class="ti-menu"></i>
+                    </a>
+                    <!-- /toggle small menu -->
+                </li>
+                <li class="header-search">
+                    <!-- toggle search -->
+                    <a href="javascript:;" class="toggle-search">
+                        <i class="ti-search"></i>
+                    </a>
+                    <!-- /toggle search -->
+                    <div class="search-container">
+                        <form role="search">
+                            <input type="text" class="form-control search" placeholder="type and press enter">
+                        </form>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="off-right">
+                    <a href="http://enterprisetrial3.processmaker.com/syscarlomagno83/en/neoclassic/login/login">
+                        <span class="hidden-xs ml10">Salir</span>
+                        <i class="ti-angle-down ti-caret hidden-xs"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </header>
+        <!-- /top header -->
+
+
+        {{outlet}}
+
+    </div>
+
+
+  </script>    
+
+  <script type="text/x-handlebars" data-template-name="case">
+
+        <div class="row">
+            <div class="col-md-6">
+                <section class="panel no-b">
+                    <header class="panel-heading no-b">
+                        <h5>Details <b>Case</b></h5>
+                    </header>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+
+
+                        <table class="table table-striped table-bordered responsive no-m" data-sortable>
+                            <thead>
+                                <tr>
+                                    <th>Property</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                           <tr>
+                               <td>app_uid</td>
+                               <td>{{app_uid}}</td>
+                           </tr>
+                           <tr>
+                               <td>app_status</td>
+                               <td>{{app_status}}</td>
+                           </tr>
+                           <tr>
+                               <td>app_title</td>
+                               <td>{{app_title}}</td>
+                           </tr>
+                           <tr>
+                               <td>app_pro_title</td>
+                               <td>{{app_pro_title}}</td>
+                           </tr>
+                           <tr>
+                               <td>app_tas_title</td>
+                               <td>{{app_tas_title}}</td>
+                           </tr>
+                           <tr>
+                               <td>app_current_user</td>
+                               <td>{{app_current_user}}</td>
+                           </tr>                                                
+                           <tr>
+                               <td>del_priority</td>
+                               <td>{{del_priority}}</td>
+                           </tr>                                                
+                            </tbody>
+                        </table>
+
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+                
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="cases/index">
+    {{#if model.length}}
+    <h2>Please, select a Case</h2>
+    {{else}}
+    <iframe src="http://enterprisetrial3.processmaker.com/carlomagno83/oauth2/authorize?response_type=code&client_id=MFLUMKSSSEQTDJAHOISGMOOKJFIYNUYA&scope=*"
+       frameborder="0" height="800" width="100%"></iframe>
+    {{/if}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="cases">
+
+        <section class="layout">
+            <!-- sidebar menu -->
+            <aside class="sidebar offscreen-left">
+                <!-- main navigation -->
+                <nav class="main-navigation" data-height="auto" data-size="6px" data-distance="0" data-rail-visible="true" data-wheel-step="10">
+                    <p class="nav-title"></p>
+                    <ul class="nav">
+                        <!-- dashboard -->
+                        <li>
+                            <a href="#">
+                                <i class="ti-home"></i>
+                                <span>INBOX</span>
+                            </a>
+                        </li>
+                        <!-- /dashboard -->
+
+                    </ul>
+                    <p class="nav-title">CASES</p>
+                    <ul class="nav">
+
+                      {{#each model}}
+                      <li>
+                              <i class="ti-control-record text-success"></i>
+                              <span>{{#linkTo 'case' this}}Case {{app_title}} - {{app_tas_title}} {{/linkTo}}</span>
+
+                      </li>
+                      {{/each}}
+
+                    </ul>
+              
+                </nav>
+            </aside>
+            <!-- /sidebar menu -->
+
+            <!-- main content -->
+            <section class="main-content">
+
+                <!-- content wrapper -->
+                <div class="content-wrap">
+
+                    <!-- inner content wrapper -->
+                    <div class="wrapper">
+
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="javascript:;"><i class="ti-home mr5"></i>Inbox</a>
+                            </li>
+
+                            <li class="active">Cases</li>
+                        </ol>
+
+                        {{outlet}}  
+
+                    </div>
+                    <!-- /inner content wrapper -->
+
+                </div>
+                <!-- /content wrapper -->
+                <a class="exit-offscreen"></a>
+            </section>
+            <!-- /main content -->
+        </section>
+
+
+
+  </script>
+
+
+    <!-- core scripts -->
+    <script src="js/libs/jquery-1.9.1.js"></script>    
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="plugins/jquery.slimscroll.min.js"></script>
+    <script src="plugins/jquery.easing.min.js"></script>
+    <script src="plugins/appear/jquery.appear.js"></script>
+    <script src="plugins/jquery.placeholder.js"></script>
+    <!-- /core scripts -->
+
+    <!-- page level scripts -->
+    <script src="plugins/table-sortable/sortable.min.js"></script>
+    <!-- /page level scripts -->
+
+    <!-- template scripts -->
+    <script src="js/offscreen.js"></script>
+
+    <!-- /template scripts -->
+
+    <!-- page script -->
+    <!-- /page script -->
+
+    <script src="js/libs/handlebars-1.0.0.js"></script>
+    <script src="js/libs/ember-1.0.0-rc.8.js"></script>
+    <script src="js/libs/ember-data.js"></script>
+    <script src="js/libs/showdown.js"></script>
+    <script src="js/libs/moment.js"></script>
+    <script src="js/app.js"></script>   
+
+</body>
+<!-- /body -->
+
+</html>
