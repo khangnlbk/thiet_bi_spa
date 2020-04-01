@@ -1,3 +1,3 @@
-#Test Laravel
+# Test Laravel
 
-##Website giới thiệu thiết bị 
+## Website giới thiệu thiết bị 
