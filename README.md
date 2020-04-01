@@ -1,7 +1,3 @@
-# Thiết bị gym
+#Test Laravel
 
-## Laravel 5.7
-
-## OS: Ubuntu 18.04
-
-## Website: havangroupfitness.com
+##Website giới thiệu thiết bị 
